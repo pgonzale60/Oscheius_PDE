@@ -16,6 +16,7 @@ renv/local/
 # Output files
 *.html
 *.pdf
+!figures/**/*.pdf
 *.docx
 
 # Data files that are too large for GitHub
@@ -32,6 +33,7 @@ Thumbs.db
 *~
 *.swp
 *.swo
+scratch/
 
 # Logs
 *.log
