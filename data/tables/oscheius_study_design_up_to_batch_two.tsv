@@ -1,0 +1,18 @@
+Strain	Sanger Sample ID (SciOps)	volume (µl)	concentration (ng/µl) Qubit	total DNA (ng)	Expected genome size (Mbs)	Suggested multiplex group	"Species"
+DF5018	BlaxGeNe8769975	43	17.0	731.0	60	1	Oscheius dolichuroides
+JU1182	BlaxGeNe8769979	43	20.0	860.0	60	2	Oscheius sp. L
+JU1382	BlaxGeNe8769980	43	12.8	550.4	60	3	Oscheius sp. M or close to M
+JU3779	BlaxGeNe8769977	43	12.1	520.3	100	1	Caenorhabditis
+JU992	BlaxGeNe8769966	43	7.6	326.8	150	2	Oscheius sp. G
+NIC2055	BlaxGeNe8769968	43	7.4	318.2	100	3	Caenorhabditis
+PS1017	BlaxGeNe8769976	43	29.0	1247.0	60	4	Oscheius dolichura
+PS2068	BlaxGeNe8769970	43	6.1	262.3	60	4	Oscheius sp. 2/C/onirici
+SB133	BlaxGeNe8769967	43	27.2	1169.6	60	5	Oscheius guentheri
+YEW1	BlaxGeNe8769978	43	18.0	774.0	150	6	Oscheius carolinensis
+SB194	BlaxGeNe8769984	45	7.9	353.7	60	5	Oscheius sp. A
+SB144	BlaxGeNe8769965	46.4	24.2	1122.9	150	7	"Oscheius chongmingensis	 cf. wohlgemuthi"
+DF5033	BlaxGeNe8769969	46.4	14.9	691.4	60	7	Oscheius sp. B
+SB147	BlaxGeNe8769971	46.4	33.6	1559.0	150	8	Oscheius cf. lucianii
+DF5120	BlaxGeNe8769972	46.4	7.4	345.2	60	9	Oscheius sp. K
+EUK108	BlaxGeNe8769973	46.4	19.3	895.5	150	9	Oscheius sp. F
+SB394	BlaxGeNe8769974	46.4	45.4	2106.6	150	8	Oscheius sp J

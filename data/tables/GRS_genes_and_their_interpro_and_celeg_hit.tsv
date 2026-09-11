@@ -1,0 +1,276 @@
+assembly	chr	start	end	aa_len	transcript_id	interpro_ids	interpro_info	celeg_symbol	celeg_id	celeg_brief_Description	celeg_aa_len	qcovs	pident	evalue	bitscore
+nxOscDolc1.1	chr_I	4123191	4123571	105	984_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_I	4123904	4125108	216	985_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_I	4127736	4128299	187	986_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_I	4129338	4131410	555	987_t	IPR036691, IPR000477	Endonuclease/exonuclease/phosphatase superfamily, Reverse transcriptase domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_I	4134166	4135439	306	988_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_I	11142096	11142647	129	2924_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_I	11144267	11146194	445	2925_t	IPR003107, IPR011990	HAT (Half-A-TPR) repeat, Tetratricopeptide-like helical domain superfamily	prp-6	Y59A8B.6		968	84	50.765	1.48e-119	371
+nxOscDolc1.1	chr_I	11146247	11146488	65	2926_t	"NA"	"NA"	prp-6	Y59A8B.6		968	83	40.741	6.3e-10	52.8
+nxOscDolc1.1	chr_I	11146694	11151605	580	2927_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_I	11153831	11157634	997	2928_t	IPR040676, IPR009878	Domain of unknown function DUF5641, Phlebovirus glycoprotein G2	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_II	6413363	6413916	159	4541_t	IPR013783, IPR008962	Immunoglobulin-like fold, PapD-like superfamily	ssp-31	ZK1225.6		107	31	52	1.1e-12	60.8
+nxOscDolc1.1	chr_II	6415651	6416797	330	4542_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_II	6418187	6419279	300	4543_t	IPR000719, IPR011009	Protein kinase domain, Protein kinase-like domain superfamily	C39H7.1	C39H7.1		308	68	36.364	9.06e-45	154
+nxOscDolc1.1	chr_II	6420236	6430197	824	4544_t	IPR001106, IPR024083, IPR005921, IPR008948, IPR022313	Aromatic amino acid lyase, Fumarase/histidase N-terminal, Histidine ammonia-lyase, L-Aspartase-like, Phenylalanine/histidine ammonia-lyases active site	haly-1	F47B10.2	haly-1 encodes a histidine ammonia lyase orthologous to the human gene HISTIDASE (HAL; OMIM:235800); HALY-1 is required in C. elegans for conversion of histidine to urocanic acid via reductive deamination; loss-of-function mutations in haly-1 result in protection against zinc and nickel toxicity owing to increased levels of metal-chelating histidine; genetic studies suggest that haly-1 functions in parallel to members of the cation diffusion facilitator family of zinc transporters encodes by cdf-1, cdf-2, and sur-7 to modulate zinc sensitivity; haly-1 mRNA levels do not vary under different dietary zinc conditions.	677	81	77.794	0	1033
+nxOscDolc1.1	chr_II	10488546	10490002	227	5512_t	"NA"	"NA"	W03F8.5a	W03F8.5a	NA	1790	78	21.026	0.002	39.3
+nxOscDolc1.1	chr_II	10493689	10494861	343	5513_t	"NA"	"NA"	F54H12.2	F54H12.2		419	87	29.545	6.54e-38	140
+nxOscDolc1.1	chr_II	10495421	10495887	154	5514_t	"NA"	"NA"	Y57G11C.20	Y57G11C.20		649	93	37.063	1.01e-21	90.5
+nxOscDolc1.1	chr_III	60494	63904	1007	5515_t	IPR025476	Helitron helicase-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_III	74516	75467	248	5516_t	"NA"	"NA"	Y53F4B.36	Y53F4B.36		297	60	20.773	1.12e-5	45.8
+nxOscDolc1.1	chr_III	75612	76773	183	5517_t	"NA"	"NA"	K08E4.3b	K08E4.3b	NA	283	69	28.788	1.96e-5	43.9
+nxOscDolc1.1	chr_III	79887	82639	729	5519_t	IPR018289	MULE transposase domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_III	83439	84327	153	5520_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_III	85687	89653	270	5521_t	IPR008962	PapD-like superfamily	ZK354.7	ZK354.7		224	26	31.818	2.34e-8	53.5
+nxOscDolc1.1	chr_III	4635671	4636434	116	6777_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_III	4636461	4636814	117	6778_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_III	4647770	4651181	339	6779_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_III	4652866	4654624	185	6780_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_III	4656726	4657101	104	6781_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_III	4657425	4658206	194	6782_t	IPR019002	Ribosome biogenesis protein Nop16	nol-16	ZK265.6		189	79	39.49	2.78e-29	107
+nxOscDolc1.1	chr_III	4658509	4659374	210	6783_t	IPR002589	Macro domain	B0035.3	B0035.3		203	94	59.898	2.03e-81	241
+nxOscDolc1.1	chr_III	4660578	4661245	136	6784_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_IV	92377	93043	154	8374_t	"NA"	"NA"	F54H12.2	F54H12.2		419	50	40.506	1.3e-8	52.8
+nxOscDolc1.1	chr_IV	94655	95987	267	8375_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_V	146004	148960	396	11734_t	IPR001951, IPR009072, IPR000719, IPR011009, IPR008271	Histone H4, Histone-fold, Protein kinase domain, Protein kinase-like domain superfamily, Serine/threonine-protein kinase active site	C27D6.11	C27D6.11		331	18	58.571	7.78e-18	84
+nxOscDolc1.1	chr_V	149325	150443	306	11735_t	IPR009060, IPR015940, IPR000626, IPR029071, IPR004806, IPR015360, IPR036353	UBA-like superfamily, Ubiquitin-associated domain, Ubiquitin-like domain, Ubiquitin-like domain superfamily, UV excision repair protein Rad23, XPC-binding domain, XPC-binding domain superfamily	rad-23	ZK20.3	rad-23 encodes a protein containing ubiquitin-like (UBL) and ubiquitin-associated (UBA) domains that is a member  of the Radiation Sensitivity 23 (RAD23) family of proteasomal ubiquitin receptors; in C. elegans, rad-23 activity is required for normal axon branching; rad-23 displays genetic interactions with png-1, which encodes a peptide-N-glycanase, also required for proper axon branching during vulval development; in addition, large-scale RNAi screens indicate that hermaphrodites treated with rad-23(RNAi) become sick and sterile, suggesting a more general role for rad-23; large-scale yeast two-hybrid experiments report that RAD-23 interacts with the product of ZK1240.2, which encodes a predicted E3 ubiquitin ligase; like its orthologs in yeast and mammals, C. elegans rad-23 functions in nucleotide excision repair (NER); rad-23 functions in the global genome repair (GGR) pathway of NER and is necessary in germ cells to repair UV-induced DNA damage and for normal meiotic development following UV irradiation; rad-23 is partially necessary for efficient UV-induced apoptosis in germ cells; rad-23 is an ortholog of human hHR23A and hHR23B.	323	98	36.449	4.02e-54	179
+nxOscDolc1.1	chr_V	151018	153281	530	11736_t	IPR003107, IPR010491, IPR011990	HAT (Half-A-TPR) repeat, PRP1 splicing factor N-terminal, Tetratricopeptide-like helical domain superfamily	prp-6	Y59A8B.6		968	99	44.731	1.24e-104	335
+nxOscDolc1.1	chr_V	153351	153907	157	11737_t	IPR003107, IPR013026, IPR011990	HAT (Half-A-TPR) repeat, Tetratricopeptide repeat-containing domain, Tetratricopeptide-like helical domain superfamily	prp-6	Y59A8B.6		968	94	65.306	2.83e-65	214
+nxOscDolc1.1	chr_V	153959	154035	10	11738_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_V	157094	157917	149	11739_t	IPR000477	Reverse transcriptase domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_V	6466105	6467418	160	13008_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_V	6468502	6470457	266	13009_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_X	3802271	3804300	395	15149_t	IPR003378	Fringe-like	C16D9.6	C16D9.6		340	67	36.735	2.3e-59	196
+nxOscDolc1.1	chr_X	3805459	3806469	228	15150_t	IPR005027, IPR029044	Glycosyl transferase family 43, Nucleotide-diphospho-sugar transferases	W07G9.2a	W07G9.2a	NA	304	92	57.143	2.65e-88	263
+nxOscDolc1.1	chr_X	3806748	3808412	415	15151_t	IPR009286	Inositol-pentakisphosphate 2-kinase	ippk-1	Y17G7B.13		454	99	35.948	1.57e-80	255
+nxOscDolc1.1	chr_X	3811299	3811941	171	15152_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_X	3814665	3815070	121	15153_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_X	3815961	3818354	471	15154_t	IPR027267, IPR001683, IPR036871, IPR001452, IPR036028, IPR019497	AH/BAR domain superfamily, Phox homologous domain, PX domain superfamily, SH3 domain, SH3-like domain superfamily, Sorting nexin protein WASP-binding domain	Y37A1B.2d	Y37A1B.2d	NA	564	93	52.208	1.15e-153	448
+nxOscDolc1.1	chr_X	3819033	3820566	368	15155_t	IPR000608, IPR016135	Ubiquitin-conjugating enzyme E2, Ubiquitin-conjugating enzyme/RWD-like	ubc-25	F25H2.8		387	100	47.132	2.29e-125	365
+nxOscDolc1.1	chr_X	3821111	3822428	343	15156_t	IPR029063	S-adenosyl-L-methionine-dependent methyltransferase	C52B9.8	C52B9.8		360	88	30.744	1.75e-43	153
+nxOscDolc1.1	chr_X	3854302	3856324	524	15157_t	IPR011356, IPR000819, IPR041417	Peptidase M17 leucine aminopeptidase/peptidase B, Peptidase M17 leucyl aminopeptidase, C-terminal, Probable aminopeptidase NPEPL1 N-terminal	lap-1	ZK353.6	lap-1 encodes one of two C. elegans homologs of the M17 class of zinc metalloproteases, leucine aminopeptidase (LAP); lap-1 mutations result in slow growth and delayed onset of egg laying; lap-1 mRNA is present throughout the larval and adult life cycle and a lap-1 promoter fusion is expressed in the intestine; staining for LAP-1 protein reveals localization to the buccal cavity, pharynx, anterior gut and rectum.	491	94	50.101	1.42e-156	455
+nxOscDolc1.1	chr_X	3857479	3859460	496	15158_t	IPR002293	Amino acid/polyamine transporter I	T13A10.10a	T13A10.10a	NA	526	98	44.239	4.13e-141	416
+nxOscDolc1.1	chr_X	3863938	3865474	365	15160_t	IPR029044, IPR004988	Nucleotide-diphospho-sugar transferases, Protein of unknown function DUF273	ZK1055.2	ZK1055.2		400	82	48.505	1.23e-106	318
+nxOscDolc1.1	chr_X	3866200	3870401	780	15161_t	IPR009072, IPR006342	Histone-fold, Methyltransferase FkbM	R09H10.2a	R09H10.2a	NA	293	38	43.421	2.54e-74	243
+nxOscDolc1.1	chr_X	3871917	3874224	413	15162_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_X	3880649	3881903	264	15163_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_X	3882504	3883801	216	15164_t	IPR011009, IPR001245, IPR036465	Protein kinase-like domain superfamily, Serine-threonine/tyrosine-protein kinase catalytic domain, von Willebrand factor A-like domain superfamily	ver-3	F59F3.1		1227	40	38.372	1.93e-18	83.2
+nxOscDolc1.1	chr_X	3886267	3886978	196	15165_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_X	3887199	3887861	220	15166_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_X	6679627	6686715	528	15876_t	IPR004951	Protein of unknown function DUF268 Caenorhabditis species	F56H6.2	F56H6.2		373	59	37.931	2.63e-69	227
+nxOscDolc1.1	chr_X	12583411	12585838	578	17296_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscDolc1.1	chr_X	12587316	12587951	212	17297_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscOnir1.2	III	10615362	10624761	1268	8171_t	IPR010285, IPR027417	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6c	Y18H1A.6c	NA	571	11	25.874	2.46e-5	48.5
+nxOscOnir1.2	IV	13353371	13353900	128	11633_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscOnir1.2	X	215	887	224	14224_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscOnir1.2	X	11746972	11756577	1162	16972_t	IPR010285, IPR027417	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase	Y116F11A.1	Y116F11A.1		202	12	25	6.54e-4	42.4
+nxOscSper1.1	I	4961	7179	652	1_t	IPR025476	Helitron helicase-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	I	7240	16179	485	2_t	IPR010285, IPR027417, IPR012337, IPR037220, IPR036236, IPR003656	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase, Ribonuclease H-like superfamily, Zinc finger BED domain, Zinc finger C2H2 superfamily, Zinc finger BED-type	Y18H1A.6c	Y18H1A.6c	NA	571	33	28.395	6.05e-10	61.6
+nxOscSper1.1	I	7779329	7785830	251	2187_t	IPR019428	7TM GPCR serpentine receptor class r (Str)	str-23	C55A1.5		361	84	26.457	1.35e-14	72.4
+nxOscSper1.1	II	811	3029	602	2188_t	IPR000605, IPR027417	Helicase superfamily 3, single-stranded DNA/RNA virus, P-loop containing nucleoside triphosphate hydrolase	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	II	3219	3830	203	2189_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	II	150979	152209	379	2191_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	II	152329	152920	176	2192_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	II	153281	153625	114	2193_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	II	153752	154453	233	2194_t	"NA"	"NA"	Y57G11C.20	Y57G11C.20		649	75	37.931	1.18e-19	87.4
+nxOscSper1.1	II	154503	154855	104	2195_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	II	160002	162052	248	2196_t	IPR000719, IPR011009, IPR017441, IPR001245	Protein kinase domain, Protein kinase-like domain superfamily, Protein kinase ATP binding site, Serine-threonine/tyrosine-protein kinase catalytic domain	ZC581.7	ZC581.7		395	46	33.333	1.12e-11	63.9
+nxOscSper1.1	II	162754	164361	226	2197_t	"NA"	"NA"	xpg-1	F57B10.6	xpg-1 encodes an ortholog of  human XPG (also known as ERCC5; mutations in this gene are associated with Cockayne Syndrome; OMIM:133530);  xpg-1 is a core NER (Nuclear Excision Repair) factor (other members being xpf-1, xpa-1, and ercc-1); NER factors remove UV-induced DNA damage and have been demonstrated to be required for both the global genome repair (GGR) and transcription coupled repair (TCR) pathways; XPG-1 activity is essential for the survival of germ cells and somatic tissue following UV irradiation and is necessary for germ cells and embryos to survive even relatively low doses of UV irradiation; mutations in xpg-1, as well as in other NER factors, render animals hypersensitive to UV light.	820	13	51.724	0.009	37
+nxOscSper1.1	II	165824	168685	487	2198_t	IPR013783, IPR008962, IPR040986, IPR042568	Immunoglobulin-like fold, PapD-like superfamily, Sulfhydryl oxidase flavin adenine dinucleotide (FAD) binding domain, Sulfhydryl oxidase flavin adenine dinucleotide (FAD) binding domain superfamily	F47B7.2c	F47B7.2c	NA	624	54	46.503	8.59e-78	255
+nxOscSper1.1	II	174413	174935	149	2199_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	II	178838	179332	138	2200_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	II	185142	186015	243	2201_t	"NA"	"NA"	F23C8.3a	F23C8.3a	NA	116	37	28.723	8.4e-5	41.2
+nxOscSper1.1	III	46508	47223	237	4456_t	"NA"	"NA"	Y57G11C.20	Y57G11C.20		649	89	37.705	6e-16	76.6
+nxOscSper1.1	III	7055185	7060965	601	6480_t	IPR000719, IPR011009, IPR017441, IPR029021, IPR003595, IPR000242, IPR008271, IPR000387	Protein kinase domain, Protein kinase-like domain superfamily, Protein kinase ATP binding site, Protein-tyrosine phosphatase-like, Protein-tyrosine phosphatase catalytic, PTP type protein phosphatase, Serine/threonine-protein kinase active site, Tyrosine specific protein phosphatases domain	F36H12.10	F36H12.10		398	18	43.396	4.44e-21	95.9
+nxOscSper1.1	III	7062684	7065913	293	6481_t	IPR001584, IPR036397, IPR012337	Integrase catalytic core, Ribonuclease H superfamily, Ribonuclease H-like superfamily	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	III	7075121	7075484	121	6482_t	"NA"	"NA"	F54H12.2	F54H12.2		419	98	41.803	2.1e-25	98.6
+nxOscSper1.1	IV	22481	23161	187	6483_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	IV	23718	26644	237	6484_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	IV	26743	27376	173	6485_t	IPR036236, IPR013087	Zinc finger C2H2 superfamily, Zinc finger C2H2-type	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	IV	28191	28535	103	6486_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	IV	36768	37469	233	6487_t	"NA"	"NA"	Y57G11C.20	Y57G11C.20		649	75	37.931	1.18e-19	87.4
+nxOscSper1.1	IV	37592	37923	109	6488_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	IV	53709	54259	159	6489_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	IV	54324	58418	401	6490_t	IPR025476	Helitron helicase-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	V	429	1467	230	8887_t	"NA"	"NA"	C03A3.2	C03A3.2		492	57	61.069	1.03e-51	174
+nxOscSper1.1	V	6837	7241	115	8889_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	V	23639	24547	222	8890_t	IPR000742, IPR013032	EGF-like domain, EGF-like conserved site	glp-1	F02A9.6	glp-1 encodes an N-glycosylated transmembrane protein that, along with LIN-12, comprises one of two C. elegans members of the LIN-12/Notch family of receptors; from the N- to the C-terminus, GLP-1 is characterized by ten extracellular EGF-like repeats, three LIN-12/Notch repeats, a CC-linker, a transmembrane domain, a RAM domain, six intracellular ankyrin repeats, and a PEST sequence; in C. elegans, GLP-1 activity is required for cell fate specification in germline and somatic tissues; in the germline, GLP-1, acting as a receptor for the DSL family ligand LAG-2, is essential for mitotic proliferation of germ cells and maintenance of germline stem cells; in somatic tissues, maternally provided GLP-1, acting as a receptor for the DSL family ligand APX-1, is required for inductive interactions that specify the fates of certain embryonic blastomeres; GLP-1 is also required for some later embryonic cell fate decisions, and in these decisions its activity is functionally redundant with that of LIN-12; GLP-1 expression is regulated temporally and spatially via translational control, as GLP-1 mRNA, present ubiquitously in the germline and embryo, yields detectable protein solely in lateral, interior, and endomembranes of distal, mitotic germ cells, and then predominantly in the AB blastomere and its descendants in the early embryo; proper spatial translation of glp-1 mRNA in the embryo is dependent upon genes such as the par genes, that are required for normal anterior-posterior asymmetry in the early embryo; signaling through GLP-1 controls the activity of the downstream Notch pathway components LAG-3 and LAG-1, the latter being predicted to function as part of a transcriptional feedback mechanism that positively regulates GLP-1 expression; signaling through the DNA-binding protein LAG-1 is believed to involve a direct interaction between LAG-1 and the GLP-1 RAM and ankyrin domains	1295	17	46.341	0.003	38.5
+nxOscSper1.1	V	28116	30830	904	8891_t	IPR004868, IPR012337	DNA-directed DNA polymerase family B, mitochondria/virus, Ribonuclease H-like superfamily	C25F9.2	C25F9.2	C25F9.2 is predicted to have 3'-5' exonuclease activity, DNA binding activity, DNA-directed DNA polymerase activity, endonuclease activity, and nucleotide binding activity, based on protein domain information; this C. elegans gene shares domain structure and an insertion found in a platyfish, and the platyfish genome has retroviral integrase, ATPase and cysteine protease nearby, which suggests it derives from a giant DNA transposable element called a maverick or polintron.	1523	97	30.769	1.04e-137	447
+nxOscSper1.1	V	31470	32512	280	8892_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	V	32557	33082	152	8893_t	IPR001810, IPR036047	F-box domain, F-box-like domain superfamily	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	V	33766	34481	201	8894_t	IPR041373	Reverse transcriptase RNase H-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	V	36085	36396	90	8895_t	IPR036168, IPR028565	AP-2 complex subunit mu C-terminal superfamily, Mu homology domain	apm-3	F53H8.1	apm-3 encodes an adaptin, orthologous to the mu3 subunit of adaptor protein complex 3 (AP-3); APM-3 is also orthologous to human HPS, which when mutated leads to Hermansky-Pudlak syndrome (OMIM:203300); based on structural similarity, APM-3 is predicted to be involved in the formation of intracellular transport vesicles, and genetic analyses indicate that apm-3 activity is required for biogenesis of lysosome-related gut granules.	414	96	66.279	6.4e-39	133
+nxOscSper1.1	V	6992728	6993587	189	10744_t	IPR013783, IPR000535, IPR008962	Immunoglobulin-like fold, Major sperm protein (MSP) domain, PapD-like superfamily	C10H11.7	C10H11.7		177	62	24.409	5.37e-4	39.3
+nxOscSper1.1	X	67204	67652	137	10745_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	82400	85232	494	10746_t	IPR021109, IPR001969, IPR041577	Aspartic peptidase domain superfamily, Aspartic peptidase active site, Reverse transcriptase/retrotransposon-derived protein RNase H-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	85608	86816	303	10747_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	102897	105687	759	10748_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	120764	126891	1519	10749_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	127214	128047	239	10750_t	IPR010285, IPR027417	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6c	Y18H1A.6c	NA	571	64	27.564	6.88e-11	61.6
+nxOscSper1.1	X	128210	129443	303	10751_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	132987	135950	800	10752_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	139629	144685	850	10753_t	IPR010285, IPR019336, IPR027417	DNA helicase Pif1-like, Intimal thickness related receptor IRP, P-loop containing nucleoside triphosphate hydrolase	C15A7.2	C15A7.2		513	51	40.183	4.73e-112	352
+nxOscSper1.1	X	2344639	2345510	269	11303_t	IPR021109	Aspartic peptidase domain superfamily	K02F6.1	K02F6.1		783	15	48.78	1e-4	43.5
+nxOscSper1.1	X	2347984	2348342	109	11304_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	2350733	2357827	764	11305_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	2362401	2365678	611	11307_t	IPR021109, IPR001995, IPR000477	Aspartic peptidase domain superfamily, Peptidase A2A retrovirus, catalytic, Reverse transcriptase domain	K02F6.1	K02F6.1		783	58	21.466	1.3e-15	80.5
+nxOscSper1.1	X	2365779	2366786	336	11308_t	IPR041588, IPR041577	Integrase zinc-binding domain, Reverse transcriptase/retrotransposon-derived protein RNase H-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	2422626	2424098	379	11309_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	2424290	2425208	292	11310_t	IPR000477	Reverse transcriptase domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	2425598	2427618	579	11311_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	2431978	2434075	450	11312_t	IPR013785, IPR001155	Aldolase-type TIM barrel, NADH:flavin oxidoreductase/NADH oxidase N-terminal	F17A9.4	F17A9.4		457	97	55	3.93e-180	511
+nxOscSper1.1	X	4766551	4767788	322	12009_t	IPR001766, IPR036390, IPR036388	Fork head domain, Winged helix DNA-binding domain superfamily, Winged helix-like DNA-binding domain superfamily	fkh-8	F40H3.4	fkh-8 encodes one of 15 C. elegans forkhead transcription factors; loss of fkh-8 activity via RNAi has been reported to result in either no defects or a weakly penetrant aldicarb resistance phenotype; an FKH-8 reporter fusion is expressed in nerve cells in the head and tail ganglia of both males and hermaphrodites with expression beginning in the later stages of embryogenesis and continuing through adulthood.	328	69	23.333	5.75e-7	50.4
+nxOscSper1.1	X	4768041	4768627	159	12010_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	4768650	4769258	178	12011_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSper1.1	X	9228058	9238993	2264	13205_t	IPR010285, IPR025476, IPR027417, IPR038765, IPR028889	DNA helicase Pif1-like, Helitron helicase-like domain, P-loop containing nucleoside triphosphate hydrolase, Papain-like cysteine peptidase superfamily, Ubiquitin specific protease domain	C11G6.2	C11G6.2		169	7	33.333	8.99e-15	74.3
+nxOscSpeu1.1	I	2986865	2987418	146	866_t	"NA"	"NA"	F20D1.3	F20D1.3		463	97	34.211	1.44e-23	95.1
+nxOscSpeu1.1	I	2987533	2987675	34	867_t	"NA"	"NA"	F20D1.3	F20D1.3		463	100	41.176	0.003	32.3
+nxOscSpeu1.1	I	2990040	2992480	592	868_t	IPR008010	Tapt1 family	F26F2.7a	F26F2.7a	NA	712	98	51.067	0	631
+nxOscSpeu1.1	I	3004083	3009642	384	870_t	IPR029526	PiggyBac transposable element-derived protein	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	I	9750546	9751256	236	2609_t	IPR041588, IPR001584, IPR036397, IPR012337	Integrase zinc-binding domain, Integrase catalytic core, Ribonuclease H superfamily, Ribonuclease H-like superfamily	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	II	133	1043	303	2610_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	II	12785	14548	555	2611_t	IPR025476	Helitron helicase-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	II	7325153	7326333	322	4418_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	II	7337659	7341281	480	4419_t	IPR000719, IPR011009	Protein kinase domain, Protein kinase-like domain superfamily	ZK596.2	ZK596.2		305	25	35.484	8.79e-14	72
+nxOscSpeu1.1	II	7342442	7350983	710	4420_t	IPR041588, IPR001584, IPR029526, IPR036397, IPR012337	Integrase zinc-binding domain, Integrase catalytic core, PiggyBac transposable element-derived protein, Ribonuclease H superfamily, Ribonuclease H-like superfamily	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	II	7351115	7352713	249	4421_t	IPR001452, IPR036028	SH3 domain, SH3-like domain superfamily	C34G6.7b	C34G6.7b	NA	397	62	56.97	1.83e-57	187
+nxOscSpeu1.1	II	7353463	7354477	276	4422_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	II	7357901	7361963	229	4423_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	II	7380146	7384690	519	4427_t	IPR024079, IPR000718, IPR018497, IPR042089, IPR008753	Metallopeptidase catalytic domain superfamily, Peptidase M13, Peptidase M13 C-terminal domain, Peptidase M13 domain 2, Peptidase M13 N-terminal domain	nep-1	ZK20.6	ZK20.6 encodes a neprilysin; neprilysins are thermolysin-like zinc metallopeptidases, found on the outer surface of animal cells, that negatively regulate small signalling peptides (e.g., enkephalin, tachykinin, insulin, and natriuretic peptides) by cleaving them; ZK20.6 is closely paralogous to F18A12.8, and orthologous to CG9761 in Drosophila melanogaster; more generally, ZK20.6 falls into a group of proteins that includes the classical neprilysins found in mammals (e.g., PEX [OMIM:307800] and the enkephalin cleaving enzymes).	754	83	26.494	7.63e-45	168
+nxOscSpeu1.1	III	9499528	9521438	4461	7941_t	IPR003593, IPR010285, IPR025476, IPR027417	AAA+ ATPase domain, DNA helicase Pif1-like, Helitron helicase-like domain, P-loop containing nucleoside triphosphate hydrolase	Y116F11A.1	Y116F11A.1		202	9	28.704	2.37e-10	63.5
+nxOscSpeu1.1	IV	9	551	181	7942_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	IV	3946	7670	324	7943_t	"NA"	"NA"	F33H1.4	F33H1.4		1378	71	47.154	6.61e-69	233
+nxOscSpeu1.1	IV	2567109	2574944	1130	8486_t	IPR027450, IPR037151, IPR012677, IPR005123, IPR000504, IPR035979, IPR014729, IPR012921, IPR010912, IPR016194, IPR011063	Alpha-ketoglutarate-dependent dioxygenase AlkB-like, Alpha-ketoglutarate-dependent dioxygenase AlkB-like superfamily, Nucleotide-binding alpha-beta plait domain superfamily, Oxoglutarate/iron-dependent dioxygenase, RNA recognition motif domain, RNA-binding domain superfamily, Rossmann-like alpha/beta/alpha sandwich fold, Spen paralogue and orthologue SPOC C-terminal, Spen paralogue/orthologue C-terminal metazoa, SPOC-like C-terminal domain superfamily, tRNA(Ile)-lysidine/2-thiocytidine synthase N-terminal	F29C4.7a	F29C4.7a	NA	520	44	52.756	0	550
+nxOscSpeu1.1	IV	2575828	2577031	351	8487_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	IV	2582122	2582533	109	8488_t	IPR012677, IPR000504, IPR035979	Nucleotide-binding alpha-beta plait domain superfamily, RNA recognition motif domain, RNA-binding domain superfamily	rbm-3.2	R09B3.3		85	71	49.351	9.04e-25	89.4
+nxOscSpeu1.1	IV	2583384	2589539	1875	8489_t	IPR016024, IPR032430, IPR021843	Armadillo-type fold, Proteasome activator Blm10 mid region, Proteasome activator complex subunit 4 C-terminal domain	T28B8.4	T28B8.4		1874	99	27.865	0	690
+nxOscSpeu1.1	IV	2589695	2591538	488	8490_t	IPR000717, IPR036390, IPR036388	Proteasome component (PCI) domain, Winged helix DNA-binding domain superfamily, Winged helix-like DNA-binding domain superfamily	rpn-5	F10G7.8		490	96	60	0	590
+nxOscSpeu1.1	IV	2591885	2592749	234	8491_t	IPR006818, IPR036747	Histone chaperone ASF1-like, Histone chaperone ASF1-like superfamily	asfl-1	C03D6.5		245	75	55.618	1.14e-66	206
+nxOscSpeu1.1	IV	2596446	2597232	173	8493_t	IPR029006	ADF-H/Gelsolin-like domain superfamily	gsnl-1	K06A4.3	gsnl-1 encodes one of three C. elegans gelsolin-related proteins; GSNL-1 contains four gelsolin-like (G) domains; GSNL-1 is predicted to function in vivo as an actin regulatory protein and in vitro, demonstrates actin filament severing activity; GSNL-1 also exhibits calcium-dependent capping of the barbed ends of actin filaments and stays bound to the side of actin filaments; GSNL-1 additionally binds to G-actin.	475	99	41.667	2.31e-42	147
+nxOscSpeu1.1	IV	2597284	2597753	143	8494_t	IPR029006, IPR007123, IPR007122	ADF-H/Gelsolin-like domain superfamily, Gelsolin-like domain, Villin/Gelsolin	gsnl-1	K06A4.3	gsnl-1 encodes one of three C. elegans gelsolin-related proteins; GSNL-1 contains four gelsolin-like (G) domains; GSNL-1 is predicted to function in vivo as an actin regulatory protein and in vitro, demonstrates actin filament severing activity; GSNL-1 also exhibits calcium-dependent capping of the barbed ends of actin filaments and stays bound to the side of actin filaments; GSNL-1 additionally binds to G-actin.	475	99	50.35	1.36e-41	144
+nxOscSpeu1.1	IV	2598185	2601741	180	8495_t	"NA"	"NA"	swt-5	K06A4.4		239	34	77.419	2.28e-27	103
+nxOscSpeu1.1	IV	2604803	2605634	195	8496_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	IV	2605686	2607447	140	8497_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	IV	2607471	2607910	109	8498_t	"NA"	"NA"	F35D2.2	F35D2.2		377	100	71.171	2.51e-54	173
+nxOscSpeu1.1	IV	2611828	2616382	539	8499_t	IPR000494	Receptor L-domain	C31E10.3a	C31E10.3a	NA	497	25	29.286	4.7e-6	49.3
+nxOscSpeu1.1	IV	2616637	2617716	258	8500_t	IPR029055, IPR000426, IPR001353	Nucleophile aminohydrolases N-terminal, Proteasome alpha-subunit N-terminal domain, Proteasome subunit alpha/beta	pas-7	ZK945.2	pas-7 encodes a proteasome alpha-type three subunit of the core 20S proteasome subcomplex; loss of pas-7 activity via RNAi results in several defects including embryonic and larval lethality, sterility, and abnormal meiotic progression.	250	88	46.018	3.54e-73	223
+nxOscSpeu1.1	IV	2618339	2621497	852	8501_t	IPR035647, IPR000640, IPR041095, IPR027417, IPR020568, IPR014721, IPR005225, IPR031157, IPR000795, IPR005517, IPR004161, IPR009000	EF-G domain III/V-like, Elongation factor EFG domain V-like, Elongation Factor G domain II, P-loop containing nucleoside triphosphate hydrolase, Ribosomal protein S5 domain 2-type fold, Ribosomal protein S5 domain 2-type fold subgroup, Small GTP-binding protein domain, Tr-type G domain conserved site, Transcription factor GTP-binding domain, Translation elongation factor EFG/EF2 domain IV, Translation elongation factor EFTu-like domain 2, Translation protein beta-barrel domain superfamily	F25H5.4a	F25H5.4a	NA	852	100	92.371	0	1650
+nxOscSpeu1.1	IV	9677964	9678283	106	10822_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	V	5583	6276	139	10823_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	V	15677	23500	638	10824_t	IPR021109, IPR024445, IPR008737	Aspartic peptidase domain superfamily, ISXO2-like transposase domain, Peptidase aspartic putative	mab-31	Y54E10A.16	mab-31 encodes a novel protein that is highly conserved amongst nematodes; mab-31 functions in the TGF-beta signaling pathway to regulate the male tail ray patterning process, specifically the positioning of the R7-derived ray cell cluster; a mab-31::gfp reporter is expressed in a wide variety of tissues, including the intestine, hypodermis, pharynx, and neuronal support cells; in males, mab-31::gfp is also seen in the ray structural cells; a MAB-31::GFP localizes to the nucleus.	427	18	29.323	5.41e-4	42.7
+nxOscSpeu1.1	V	26671	27476	257	10825_t	IPR038717, IPR036388	Tc1-like transposase DDE domain, Winged helix-like DNA-binding domain superfamily	F46F5.8	F46F5.8		68	19	34.694	0.002	36.2
+nxOscSpeu1.1	V	28766	29709	125	10826_t	"NA"	"NA"	T04H1.4b	T04H1.4b	NA	1312	74	38.384	1.82e-11	60.1
+nxOscSpeu1.1	V	39269	39986	144	10827_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	V	42188	42772	194	10828_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	V	46024	51872	138	10829_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	V	79333	86131	847	10831_t	IPR000558, IPR009072, IPR012816, IPR036390, IPR037238, IPR013087	Histone H2B, Histone-fold, NADAR, Winged helix DNA-binding domain superfamily, YbiA-like superfamily, Zinc finger C2H2-type	F33H1.4	F33H1.4		1378	30	36.015	3.23e-48	186
+nxOscSpeu1.1	V	86219	89151	625	10832_t	IPR020472, IPR001680, IPR019775, IPR017986, IPR036322, IPR015943	G-protein beta WD-40 repeat, WD40 repeat, WD40 repeat conserved site, WD40-repeat-containing domain, WD40-repeat-containing domain superfamily, WD40/YVTN repeat-like-containing domain superfamily	rack-1	K04D7.1	rack-1 encodes a seven-WD repeat-containing protein that is the C. elegans ortholog of vertebrate Receptor for Activated C Kinase (Rack1); rack-1 is required cell autonomously for VD/DD motor axon pathfinding; rack-1 is also required for gonadal distal tip cell migration and for normal brood sizes; genetic analyses indicate that rack-1 functions in the same pathway with ced-10/Rac and unc-115/abLIM, and in parallel to mig-2/RhoG and unc-34/Enabled, to control axon pathfinding; in regulating axon pathfinding, RACK-1 likely acts upstream of UNC-115 with which it physically interacts; rack-1 also acts downstream of, or with, unc-115 to regulate P cell nuclear migration; in regulating gonadal distal tip cell migration, rack-1 acts either independently of, or in the same pathway as, ced-10 and mig-2; rack-1::gfp is expressed in most, if not all, tissues, and a RACK-1::GFP localizes to the cytoplasm, with some fusion protein also seen in the axons, cell bodies, and growth cones of migrating VD neurons.	325	50	77.044	3.76e-180	513
+nxOscSpeu1.1	V	10865760	10868366	396	13648_t	IPR029526	PiggyBac transposable element-derived protein	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	V	10870937	10871645	196	13649_t	IPR000857, IPR038185	MyTH4 domain, MyTH4 domain superfamily	hum-6	T10H10.1	hum-6 is orthologous to the human gene MYOSIN VIIA (MYO7A; OMIM:276903), which when mutated leads to Usher syndrome type IB.	2098	100	65.306	1e-79	258
+nxOscSpeu1.1	V	10871734	10882380	332	13650_t	IPR036961, IPR001609, IPR027417, IPR011993	Kinesin motor domain superfamily, Myosin head motor domain, P-loop containing nucleoside triphosphate hydrolase, PH-like domain superfamily	hum-6	T10H10.1	hum-6 is orthologous to the human gene MYOSIN VIIA (MYO7A; OMIM:276903), which when mutated leads to Usher syndrome type IB.	2098	89	64.623	9.9e-81	267
+nxOscSpeu1.1	V	10893265	10894896	478	13651_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+nxOscSpeu1.1	X	6337003	6344581	1122	15291_t	IPR029058, IPR019826, IPR002018, IPR013099, IPR003280	Alpha/Beta hydrolase fold, Carboxylesterase type B active site, Carboxylesterase type B, Potassium channel domain, Two pore domain potassium channel	twk-24	F55C5.3		579	50	59.831	0	614
+nxOscSpeu1.1	X	12151925	12160958	2821	16723_t	IPR010285, IPR025476, IPR027417	DNA helicase Pif1-like, Helitron helicase-like domain, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6c	Y18H1A.6c	NA	571	16	24.911	4.75e-11	68.6
+oscheius_tipulae.PRJNA644888	I	11	10509	3306	Oti_645_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	10783	15571	803	Oti_646_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	15845	18082	606	Oti_647_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	19965	20759	213	Oti_648_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	21578	24786	913	Oti_649_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	8862090	8864582	536	Oti_6989_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	8865818	8869186	988	Oti_6990_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	8869302	8870733	423	Oti_6991_t	IPR025476	Helitron helicase-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	8870914	8879776	2386	Oti_6992_t	IPR010285, IPR027417	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6b	Y18H1A.6b	NA	394	13	30.657	9.21e-12	69.7
+oscheius_tipulae.PRJNA644888	I	8879955	8882470	214	Oti_6993_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	8882880	8883539	176	Oti_6994_t	IPR001841, IPR017907	Zinc finger RING-type, Zinc finger RING-type, conserved site	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	I	8885163	8916579	10018	Oti_6995_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	II	12	19614	5915	Oti_13347_t	IPR025476	Helitron helicase-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	II	23604	25030	212	Oti_13349_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	II	8999378	9000324	203	Oti_13342_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	II	9000517	9001602	290	Oti_13343_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	II	9002082	9003445	164	Oti_13344_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	II	9003992	9005076	194	Oti_13345_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	II	9006222	9029963	6972	Oti_13346_t	IPR013087	Zinc finger C2H2-type	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	III	26	12296	3812	Oti_6996_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	III	13313	15595	341	Oti_6997_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	III	9596524	9598395	305	Oti_3352_t	IPR010285, IPR027417	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase	F11C3.1	F11C3.1		431	58	29.891	5.58e-6	47.8
+oscheius_tipulae.PRJNA644888	III	9600230	9601289	191	Oti_3353_t	IPR001214	SET domain	set-16	T12D8.1	set-16 encodes an H3K methyltransferases of the SET1/mixed lineage leukaemia (MLL) family; SET-16 regulates levels of H3K4 trimethylation in vivo and the SET-16 SET domain has H3K4 monomethylase activity in vitro; set-16 is an essential gene and also plays a role in attenuating Ras-mediated signaling during vulval development, by regulating expression of ajm-1, which encodes a component of cellular junctions; a set-16::GFP reporter fusion is expressed at high levels in the non-vulval descendants of the vulval precursor cells and at lower levels in the vulval cells themselves.	2475	12	69.565	6.44e-4	40
+oscheius_tipulae.PRJNA644888	III	9601986	9602734	171	Oti_3354_t	"NA"	"NA"	mccc-2	F02A9.10		608	51	36.937	3.47e-12	63.5
+oscheius_tipulae.PRJNA644888	III	9604630	9605271	146	Oti_3355_t	IPR013763, IPR036915, IPR004367, IPR006671	Cyclin-like, Cyclin-like superfamily, Cyclin C-terminal domain, Cyclin N-terminal	cya-1	ZK507.6	cya-1 encodes an A-type cyclin; loss of cya-1 via RNAi results in sterility but no defects in embryonic cell divisions, or embryonic lethality, is observed; CYA-1 is predicted to be a substrate of germ-line MPK-1/ERK activity that functions to regulate oocyte organization and differentiation.	485	95	26.263	5.54e-15	70.9
+oscheius_tipulae.PRJNA644888	III	9606395	9607438	185	Oti_3356_t	"NA"	"NA"	C48B4.4a	C48B4.4a	NA	1689	72	25.926	5.39e-7	48.9
+oscheius_tipulae.PRJNA644888	III	9607641	9609232	331	Oti_3357_t	"NA"	"NA"	abt-5	Y53C10A.9	abt-5 encodes a predicted ATP-binding cassette (ABC) transporter that is a member of the ABCA subfamily of transport proteins; ABT-5 is predicted to function as a transmembrane protein that couples energy to transport of various molecules across membranes, but as loss of abt-5 activity via RNAi results in no obvious defects, the precise role of abt-5 in C. elegans development and/or behavior is not yet known; abt-5 promoter-gfp fusion proteins are expressed in larvae and adults in the intestine and in unidentified cells in the head.	1582	9	54.839	1.94e-4	43.5
+oscheius_tipulae.PRJNA644888	III	9609468	9613554	967	Oti_3358_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	III	9615191	9617242	553	Oti_3359_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	III	9617516	9620528	792	Oti_3360_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	III	9620635	9635438	4554	Oti_3361_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	IV	3314	7493	611	Oti_9688_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	IV	8311	10456	232	Oti_9689_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	IV	10638	24616	3895	Oti_9690_t	IPR010285, IPR025476, IPR027417	DNA helicase Pif1-like, Helitron helicase-like domain, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6b	Y18H1A.6b	NA	394	8	30.657	1.71e-11	69.7
+oscheius_tipulae.PRJNA644888	IV	27340	27943	135	Oti_9691_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	IV	28126	28918	197	Oti_9692_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	IV	33960	35815	285	Oti_9694_t	IPR018957, IPR017907, IPR013083	Zinc finger C3HC4 RING-type, Zinc finger RING-type, conserved site, Zinc finger RING/FYVE/PHD-type	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	IV	36231	38355	162	Oti_9695_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	IV	11180545	11184969	564	Oti_15045_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	12	21100	5799	Oti_15046_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	22526	24123	269	Oti_15047_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	24381	25933	216	Oti_15048_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	27420	29021	248	Oti_15049_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	29279	30410	209	Oti_15050_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	10779087	10786256	1136	Oti_639_t	IPR008979, IPR012919	Galactose-binding-like domain superfamily, SUN domain	suco-1	R12E2.2		802	43	35.028	5.35e-68	245
+oscheius_tipulae.PRJNA644888	V	10787657	10789710	542	Oti_640_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	10789984	10792240	521	Oti_641_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	10793649	10807291	3838	Oti_642_t	IPR010285, IPR025476, IPR027417	DNA helicase Pif1-like, Helitron helicase-like domain, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6b	Y18H1A.6b	NA	394	8	30.657	1.63e-11	69.7
+oscheius_tipulae.PRJNA644888	V	10807357	10809889	305	Oti_643_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	V	10810297	10817465	1360	Oti_644_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	14	7080	2082	Oti_11134_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	12503	14207	451	Oti_11135_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	14466	16835	574	Oti_11136_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	17355	19341	383	Oti_11137_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	19580	20753	296	Oti_11138_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	22228	25562	883	Oti_11140_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	25836	28073	605	Oti_11141_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	34077	35782	451	Oti_11142_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	36041	38410	574	Oti_11143_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	38931	40918	383	Oti_11144_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	41157	42330	296	Oti_11145_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	43802	47137	884	Oti_11147_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	47411	49649	605	Oti_11148_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11176631	11178046	351	Oti_3662_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11178579	11179595	338	Oti_3663_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11179647	11182142	718	Oti_3664_t	IPR008042	Retrotransposon Pao	Y20F4.8	Y20F4.8		345	8	33.333	0.001	42
+oscheius_tipulae.PRJNA644888	X	11184684	11185703	339	Oti_3666_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11185890	11187188	403	Oti_3667_t	IPR005312	Protein of unknown function DUF1759	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11187923	11189023	302	Oti_3668_t	IPR010285, IPR027417	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6b	Y18H1A.6b	NA	394	94	29.47	2.63e-16	78.6
+oscheius_tipulae.PRJNA644888	X	11189048	11189410	120	Oti_3669_t	IPR010285, IPR027417	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase	eri-7	C41D11.7		625	43	41.176	5.3e-5	41.2
+oscheius_tipulae.PRJNA644888	X	11189472	11192409	867	Oti_3670_t	IPR025476	Helitron helicase-like domain	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11193938	11200003	328	Oti_3671_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11200376	11202440	606	Oti_3672_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11202684	11204324	403	Oti_3673_t	IPR009057, IPR036388	Homeobox-like domain superfamily, Winged helix-like DNA-binding domain superfamily	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11204439	11205465	317	Oti_3674_t	IPR009057, IPR036388	Homeobox-like domain superfamily, Winged helix-like DNA-binding domain superfamily	pax-3	F27E5.2	pax-3 encodes a divergent paired-like homeodomain protein that does not belong to the Q50, K50, or S50 classes; PAX-3 is required for locomotion and vulval development; pax-3(RNAi) animals have consistent Pvl and Unc phenotypes (as well as less consistent Bmd, Rup, and Stp phenotypes).	308	23	28.378	8.88e-4	40.4
+oscheius_tipulae.PRJNA644888	X	11205535	11206454	278	Oti_3675_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11212227	11212695	121	Oti_3677_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11213784	11215219	396	Oti_3678_t	IPR014876	DEK C-terminal	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11215702	11216135	119	Oti_3679_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11216800	11219599	280	Oti_3680_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11223133	11224516	141	Oti_3681_t	"NA"	"NA"	C34G6.4d	C34G6.4d	NA	1265	28	48.78	0.005	36.2
+oscheius_tipulae.PRJNA644888	X	11229669	11233428	341	Oti_3682_t	IPR002123	Phospholipid/glycerol acyltransferase	acl-1	F59F4.4	acl-1 encodes a glycerol-3-phosphate acyltransferase; ACL-1 is predicted to be a membrane protein that plays a role in phospholipid biosynthesis; acl-1 expression decreases gradually throughout aging.	262	23	66.25	6.39e-30	115
+oscheius_tipulae.PRJNA644888	X	11235764	11239628	502	Oti_3683_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11240577	11241218	187	Oti_3684_t	IPR003840, IPR027417	DNA helicase, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6b	Y18H1A.6b	NA	394	48	36.667	1.04e-11	62.4
+oscheius_tipulae.PRJNA644888	X	11241966	11245703	535	Oti_3685_t	IPR003616, IPR001214	Post-SET domain, SET domain	C26E6.9b	C26E6.9b	NA	739	42	40.833	1.14e-42	162
+oscheius_tipulae.PRJNA644888	X	11248881	11249801	258	Oti_3686_t	IPR009057, IPR025246, IPR036388	Homeobox-like domain superfamily, Transposase IS30-like HTH domain, Winged helix-like DNA-binding domain superfamily	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11250367	11251421	310	Oti_3687_t	IPR038717	Tc1-like transposase DDE domain	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11252314	11254026	239	Oti_3688_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11254149	11258197	452	Oti_3689_t	IPR003439, IPR027417, IPR014816	ABC transporter-like, P-loop containing nucleoside triphosphate hydrolase, tRNA (1-methyladenosine) methyltransferase catalytic subunit Gcd14	W02A11.1	W02A11.1		312	14	53.846	3.64e-12	67
+oscheius_tipulae.PRJNA644888	X	11258389	11259748	256	Oti_3690_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11259809	11261282	184	Oti_3691_t	IPR034733, IPR029045	Acetyl-CoA carboxylase, ClpP/crotonase-like domain superfamily	mccc-2	F02A9.10		608	50	51.087	4.45e-21	89.7
+oscheius_tipulae.PRJNA644888	X	11261718	11267219	784	Oti_3692_t	IPR013763, IPR036915, IPR004367, IPR006671, IPR019164	Cyclin-like, Cyclin-like superfamily, Cyclin C-terminal domain, Cyclin N-terminal, Transmembrane protein 147	ZK418.5	ZK418.5		225	20	44.172	4.33e-31	121
+oscheius_tipulae.PRJNA644888	X	11267294	11268600	325	Oti_3693_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11272035	11273348	360	Oti_3694_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11279580	11281635	560	Oti_3696_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11281906	11285225	889	Oti_3697_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11286697	11287870	296	Oti_3699_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11288110	11288634	124	Oti_3700_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11289869	11293238	960	Oti_3701_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11294391	11294784	116	Oti_3703_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11294965	11303828	2406	Oti_3704_t	IPR010285, IPR027417	DNA helicase Pif1-like, P-loop containing nucleoside triphosphate hydrolase	Y18H1A.6b	Y18H1A.6b	NA	394	13	30.657	9.05e-12	69.7
+oscheius_tipulae.PRJNA644888	X	11304030	11306734	219	Oti_3705_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA
+oscheius_tipulae.PRJNA644888	X	11306920	11307562	158	Oti_3706_t	"NA"	"NA"	NA	NA	NA	NA	NA	NA	NA	NA

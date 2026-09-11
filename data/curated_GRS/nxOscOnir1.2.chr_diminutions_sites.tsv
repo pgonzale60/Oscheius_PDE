@@ -1,0 +1,13 @@
+chr	diminution_pos	feature	type	has_GRS
+I	484	telomere_seq_split	distal	no
+I	9757431	telomere_seq_split	distal	yes
+II	0	chr_end	distal	no
+II	10439112	telomere_seq_split	distal	yes
+III	980	telomere_seq_split	distal	yes
+III	10449374	telomere_seq_split	distal	yes
+IV	4093	telomere_seq_split	distal	yes
+IV	13341662	telomere_seq_split	distal	yes
+V	1345	telomere_seq_split	distal	yes
+V	9840991	chr_end	distal	no
+X	5948	telomere_seq_split	distal	yes
+X	11743800	telomere_seq_split	distal	yes

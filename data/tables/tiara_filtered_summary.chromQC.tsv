@@ -1,0 +1,13 @@
+assemblyName	nT2t	nCompleteNigonSeqs	nInternalTelomere	nNigonFusedAndInternalTelomere	nNigonFused	completeUscos	singleUscos	duplicatedUscos	fragmentedUscos	missingUscos	t2tSeqs	completeNigonSeqs	completeNigons
+DF5120.canu	0	0	0	0	0	79.1	64.5	14.6	5.8	15.1			
+DF5120.flyemeta	2	4	4	1	1	79.1	77.5	1.5	5.8	15.1	scaffold_24,contig_18	scaffold_24,contig_18,contig_5,contig_5	A,C,D,N
+DF5120.hifiasm	1	2	3	1	1	79.1	77.5	1.6	5.8	15	ptg000001l	ptg000001l,ptg000003l	A,N
+JU1382.canu	0	0	2	1	1	78.2	73.8	4.4	5.7	16.1			
+JU1382.flyemeta	0	2	6	0	0	78.1	75.9	2.3	5.7	16.2		scaffold_12,contig_33	B,N
+JU1382.hifiasm	0	0	6	0	0	78.1	75.7	2.4	5.7	16.2			
+PS1017.canu	0	0	3	0	1	78.3	72.8	5.6	5	16.7			
+PS1017.flyemeta	0	1	7	0	1	78.3	76.2	2.1	5	16.7		contig_10	D
+PS1017.hifiasm	0	1	6	0	0	78.3	76.3	2.1	5	16.7		ptg000001l	D
+PS2068.canu	1	2	3	0	0	80	75	5	5	15	tig00000001	tig00000038,tig00000001	N,X
+PS2068.flyemeta	4	4	2	0	0	80	78.1	1.9	4.9	15.1	contig_8,contig_22,contig_5,contig_9	contig_8,contig_22,contig_5,contig_9	C,D,N,X
+PS2068.hifiasm	3	3	2	0	0	79.9	77.8	2.1	4.9	15.2	ptg000005l,ptg000001l,ptg000007l	ptg000005l,ptg000001l,ptg000007l	C,N,X

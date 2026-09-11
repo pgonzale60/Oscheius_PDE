@@ -1,0 +1,764 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.1.1 (Release date: Wed Jan 29 15:00:42 2020 -0800)
+
+For further information on how to interpret please access http://localhost:8080.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= all_break_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+nxOscDolc1.1_chr_I:24068 1.0000    101  nxOscDolc1.1_chr_I:41180 1.0000    101  
+nxOscDolc1.1_chr_I:41368 1.0000    101  nxOscDolc1.1_chr_I:11141 1.0000    101  
+nxOscDolc1.1_chr_II:6689 1.0000    101  nxOscDolc1.1_chr_II:6412 1.0000    101  
+nxOscDolc1.1_chr_II:6426 1.0000    101  nxOscDolc1.1_chr_II:1047 1.0000    101  
+nxOscDolc1.1_chr_III:913 1.0000    101  nxOscDolc1.1_chr_III:463 1.0000    101  
+nxOscDolc1.1_chr_III:466 1.0000    101  nxOscDolc1.1_chr_III:107 1.0000    101  
+nxOscDolc1.1_chr_IV:2338 1.0000    101  nxOscDolc1.1_chr_IV:5184 1.0000    101  
+nxOscDolc1.1_chr_IV:1245 1.0000    101  nxOscDolc1.1_chr_V:16161 1.0000    101  
+nxOscDolc1.1_chr_V:64516 1.0000    101  nxOscDolc1.1_chr_V:64715 1.0000    101  
+nxOscDolc1.1_chr_V:11200 1.0000    101  nxOscDolc1.1_chr_X:44825 1.0000    101  
+nxOscDolc1.1_chr_X:38017 1.0000    101  nxOscDolc1.1_chr_X:38231 1.0000    101  
+nxOscDolc1.1_chr_X:38523 1.0000    101  nxOscDolc1.1_chr_X:38893 1.0000    101  
+nxOscDolc1.1_chr_X:66840 1.0000    101  nxOscDolc1.1_chr_X:12574 1.0000    101  
+nxOscOnir1.2_I:9757381-9 1.0000    101  nxOscOnir1.2_II:10439062 1.0000    101  
+nxOscOnir1.2_III:930-103 1.0000    101  nxOscOnir1.2_III:1044932 1.0000    101  
+nxOscOnir1.2_IV:4043-414 1.0000    101  nxOscOnir1.2_IV:13341612 1.0000    101  
+nxOscOnir1.2_V:1295-1395 1.0000    101  nxOscOnir1.2_X:5898-5998 1.0000    101  
+nxOscOnir1.2_X:11743750- 1.0000    101  nxOscSper1.1_I:37436-375 1.0000    101  
+nxOscSper1.1_I:7780917-7 1.0000    101  nxOscSper1.1_II:187457-1 1.0000    101  
+nxOscSper1.1_III:61948-6 1.0000    101  nxOscSper1.1_III:7052263 1.0000    101  
+nxOscSper1.1_IV:73691-73 1.0000    101  nxOscSper1.1_IV:8349478- 1.0000    101  
+nxOscSper1.1_V:38084-381 1.0000    101  nxOscSper1.1_V:6988816-6 1.0000    101  
+nxOscSper1.1_X:142202-14 1.0000    101  nxOscSper1.1_X:2337484-2 1.0000    101  
+nxOscSper1.1_X:2434204-2 1.0000    101  nxOscSper1.1_X:4766359-4 1.0000    101  
+nxOscSper1.1_X:4778689-4 1.0000    101  nxOscSper1.1_X:9216225-9 1.0000    101  
+nxOscSpeu1.1_I:2982824-2 1.0000    101  nxOscSpeu1.1_I:3019237-3 1.0000    101  
+nxOscSpeu1.1_II:20352-20 1.0000    101  nxOscSpeu1.1_II:7323623- 1.0000    101  
+nxOscSpeu1.1_II:7392376- 1.0000    101  nxOscSpeu1.1_II:10222703 1.0000    101  
+nxOscSpeu1.1_III:5300-54 1.0000    101  nxOscSpeu1.1_III:5646458 1.0000    101  
+nxOscSpeu1.1_III:9503266 1.0000    101  nxOscSpeu1.1_IV:5017-511 1.0000    101  
+nxOscSpeu1.1_IV:2621604- 1.0000    101  nxOscSpeu1.1_IV:6701945- 1.0000    101  
+nxOscSpeu1.1_IV:9677760- 1.0000    101  nxOscSpeu1.1_V:89483-895 1.0000    101  
+nxOscSpeu1.1_V:4685131-4 1.0000    101  nxOscSpeu1.1_V:4685520-4 1.0000    101  
+nxOscSpeu1.1_V:10859079- 1.0000    101  nxOscSpeu1.1_X:3028-3128 1.0000    101  
+nxOscSpeu1.1_X:1324955-1 1.0000    101  nxOscSpeu1.1_X:6339583-6 1.0000    101  
+nxOscSpeu1.1_X:6341882-6 1.0000    101  nxOscSpeu1.1_X:7669377-7 1.0000    101  
+nxOscSpeu1.1_X:7673330-7 1.0000    101  nxOscSpeu1.1_X:9264361-9 1.0000    101  
+nxOscSpeu1.1_X:9264619-9 1.0000    101  nxOscSpeu1.1_X:12145024- 1.0000    101  
+nxOscTipu1.1_I:27135-272 1.0000    101  nxOscTipu1.1_I:8860831-8 1.0000    101  
+nxOscTipu1.1_II:25131-25 1.0000    101  nxOscTipu1.1_II:8999711- 1.0000    101  
+nxOscTipu1.1_III:16249-1 1.0000    101  nxOscTipu1.1_III:9596280 1.0000    101  
+nxOscTipu1.1_IV:39733-39 1.0000    101  nxOscTipu1.1_IV:11179798 1.0000    101  
+nxOscTipu1.1_V:30614-307 1.0000    101  nxOscTipu1.1_V:10783407- 1.0000    101  
+nxOscTipu1.1_X:51796-518 1.0000    101  nxOscTipu1.1_X:11175636- 1.0000    101  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna all_break_sites.fasta -nmotifs 6 -evt 0.01 
+
+model:  mod=         zoops    nmotifs=         6    evt=          0.01
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           50
+nsites: minsites=        2    maxsites=       88    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            8888    N=              88
+sample: seed=            0    hsfrac=          0
+        searchsize=   8888    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.308 C 0.203 G 0.194 T 0.295 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.308 C 0.203 G 0.194 T 0.295 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW MEME-1	width =  33  sites =  82  llr = 1773  E-value = 1.8e-522
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  4442:22::1:14:::1271::3793::76965
+pos.-specific     C  1111:::::5112::a33::9a31:1aa11:11
+probability       G  1211:1:aa::129a::3291:12:6::1:::1
+matrix            T  4346977::4963:::631:::3111::22123
+
+         bits    2.4        **                        
+                 2.1        **     *           **     
+                 1.9        **    ***   ***    **     
+                 1.7        **    ***   ***    **     
+Relative         1.4     *  **    ***   ***    **     
+Entropy          1.2     *  **    ***   ***    **     
+(31.2 bits)      0.9     *  ** *  ***   ***  * **  *  
+                 0.7     * *** *  ***   ***  ****  *  
+                 0.5     *******  **** **** ****** ** 
+                 0.2 *  ********* **** **** **********
+                 0.0 ---------------------------------
+
+Multilevel           TAATTTTGGCTTAGGCTTAGCCTAAGCCAAAAA
+consensus            ATTA     T  T   CC    A  A   T TT
+sequence                              G    C          
+                                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                          Site             
+-------------             ----- ---------            ---------------------------------
+nxOscOnir1.2_IV:4043-414     32  1.67e-15 AAGAAAAAAA GATATTTGGTTTCGGCTCAGCCTAAGCCAAAAA TATAACATAT
+nxOscDolc1.1_chr_X:66840     35  5.89e-15 AAGATACGCG TTGTTTAGGCTTAGGCCGAGCCTAAGCCAAAAT CTAATTATGT
+nxOscSpeu1.1_II:7392376-     33  8.72e-15 GTTATTTTTT GAAATTTGGTTTAGGCTTAGCCCGAGCCAAAAA ACCGTCTGTC
+nxOscTipu1.1_II:25131-25     33  2.21e-14 TTACAACACA ATATTTTGGTTTCGGCTTAGCCCAAGCCGAAAG TCCAAAGTTA
+nxOscDolc1.1_chr_II:6426     33  3.75e-14 CGGAAGTAGT TTGTTTTGGCTATGGCTCAGCCTCAGCCAAAAA TTACGAGTAG
+nxOscTipu1.1_I:27135-272     33  4.45e-14 ATTTGTGTTT TGATTTTGGCTGCGGCCGAGCCCAAACCTAAAA AAATGTGTCA
+nxOscSpeu1.1_X:1324955-1     35  6.22e-14 TAAAAAAGAT AATTTTTGGATTAGGCCGAGCCAAAACCAAAAA TTAACATCTT
+nxOscSpeu1.1_X:9264361-9     33  8.64e-14 TTCGAAAACG GTTATTTGGTTTAGGCTTGGCCCAAACCAAAAA AATAAACAGA
+nxOscSpeu1.1_X:6339583-6     31  1.01e-13 TTTTGACAGA GTTTTTAGGCTTAGGCTTAGCCGCAGCCAAAAA TCAAATTTAA
+nxOscDolc1.1_chr_I:41368     33  1.01e-13 GCCGGATCAC TCATTGTGGCTTTGGCTGAGCCTGAGCCATATA ATTATTATTT
+nxOscOnir1.2_IV:13341612     35  1.19e-13 CTGCAATCTG AAATTTTGGCTAAGGCTCAGCCCGACCCAAAAA ACTTACTGCA
+nxOscSpeu1.1_V:89483-895     32  2.57e-13 AGCAAAAATT AATTTTTGGATTTGGCTCGGCCTAAGCCCAAAA CAAGGCGCTT
+nxOscSpeu1.1_X:9264619-9     32  4.61e-13 AAGAGAGATT ATTATTTGGCTTAGGCTTGGCCCTAACCAAAAA AAATAAGCAG
+nxOscSpeu1.1_I:3019237-3     33  4.61e-13 ATATGCTGTT ATGTTTTGGGTTAGGCTCAGCCTTAGCCAAAAT ATTCTAATCG
+nxOscSpeu1.1_I:2982824-2     35  5.32e-13 AGAAACAAAA AAATTATGGTTAAGGCATAGCCAAAGCCAAAAA AAGCTATGTT
+nxOscDolc1.1_chr_IV:2338     32  6.13e-13 TACTGCTCCC TTATTTTGGCTGCGGCTTGGCCCAAGCCTAACT GTTATCACTG
+nxOscOnir1.2_I:9757381-9     35  7.05e-13 CGGGGCCAGT TTGGTTTGGTTTAGGCCGAGCCGAAGCCATACA TGAAGTGATT
+nxOscSpeu1.1_X:6341882-6     33  9.30e-13 TAGATTATTC ATATTTTGGGTTAGGCATAGCCTCAGCCAAAAT TGAAATTGCT
+nxOscDolc1.1_chr_II:6412     35  9.30e-13 GCAGATGCTT ATTTTTTGGCTTGGGCCTAGCCGAAGCCAGACC TCCCCCCTCC
+nxOscDolc1.1_chr_II:6689     33  9.30e-13 TTCCATCATT TATATATGGCTTCGGCCCAGCCACAGCCATAAT CGCTTCAAAA
+nxOscSpeu1.1_V:4685520-4     32  1.07e-12 AGGAAGTTCT TGACTGTGGCTTAGGCTGGGCCTAACCCAAAAT ATTGGGTTGA
+nxOscSpeu1.1_X:7669377-7     35  1.22e-12 AAAAACAACT ATTGTTTGGCTCAGGCCGCGCCTAAGCCAAAAT ACCAATAGTA
+nxOscSpeu1.1_II:7323623-     34  1.22e-12 ACCCCTATCT CGATTTTGGTTTTGGCTATGCCTAAACCAAAAA AACGGAAGAA
+nxOscDolc1.1_chr_III:913     33  1.22e-12 TGATTCATTG TGTTTTTGGCACGGGCCGAGCCAAAGCCACAAA TTAATGGTCA
+nxOscDolc1.1_chr_II:1047     34  1.22e-12 TTTTTACCTA TACTTGTGGTTTTGGCTCGGCCTGAGCCATATA CAGGCCAAAC
+nxOscDolc1.1_chr_IV:5184     34  1.59e-12 CAAATCTGAA GGACTTTGGCATAGGCTGAGCCTAAGCCAAACA ATGTAAAAAT
+nxOscSpeu1.1_V:10859079-     35  1.81e-12 TCAAAAAAAT TAAATTTGGTTCTGGCACAGGCCAAGCCAAAAA ACCCAAATCA
+nxOscOnir1.2_III:930-103     32  2.07e-12 TTCACAATCT TTTTTTTGGCTGTGGCTAAGCCAAAGCCTGATT AACAGGTGAT
+nxOscDolc1.1_chr_X:44825     33  2.07e-12 CAGTCCGACA CCAATTTGGCTTAGGCTGAGCCCAAGCCACAGT TCTAGTTTCC
+nxOscDolc1.1_chr_V:16161     33  3.03e-12 TTGTAATTCC TTGGTTCGGCTGTGGCTGAGCCTGAGCCATAAA GTACTGGAAT
+nxOscSpeu1.1_IV:5017-511     32  4.40e-12 CTTTACATCT AGAATTTGGTTTCGGCTATGCCTAAACCACAAA AAATTCAATT
+nxOscSpeu1.1_III:5300-54     17  4.40e-12 CTGTACATCT AGAATTTGGTTTCGGCTATGCCTAAACCACAAA AAATTCAATT
+nxOscSper1.1_X:4766359-4     34  4.40e-12 ATGTTTTAGG CTATTCTGGTTTAGGCTCAGCCTATGCCATAAA AACCCTTGTT
+nxOscDolc1.1_chr_X:12574     35  4.40e-12 CCCGGTTTAT TGATTATGGCTGTGGCACAGCCCAAACCAAATG GAGCTATGAG
+nxOscSpeu1.1_II:10222703     35  4.98e-12 AACAAATTTC GAAGTTTGGTTCTGGCACAGGCCAAGCCAAAAA ACCCTCCACC
+nxOscOnir1.2_II:10439062     35  7.14e-12 TGGTCTAATA TTTTTTTGGATGAGGCCGAGCCGAAACCTAATA ACTTTTTTCT
+nxOscDolc1.1_chr_X:38523     33  7.14e-12 GTTACCTGTC GCTGTATGGTTTTGGCTTAGCCGAAGCCTTAAA AGGACTGTCA
+nxOscSpeu1.1_IV:6701945-     34  8.04e-12 CCTAATCCTG TTTTTTTGGTTTTGGCTCAGCCATAACCTAAGT AATTAGAAAA
+nxOscTipu1.1_I:8860831-8     35  1.28e-11 AAAAGCACAG TTTTTGGGGTTTGGGCCCGGCCAAAGCCCAAAG TCCCCAAAGT
+nxOscSpeu1.1_IV:2621604-     33  1.28e-11 TTTGAATTAG CCTTTTTGGTTTCGGCTCAGCCTCAGCCTAACC TTCCGTTTTC
+nxOscTipu1.1_II:8999711-     35  1.44e-11 TGAGTATGAT AAAGTTAGGCCGAGGCCGAGCCCAAACCAAATA ACTTTGTTTT
+nxOscDolc1.1_chr_III:466     33  1.44e-11 AAAACGAATA TAGTATTGGTTCCGGCCCAGCCTAAGCCAATAA TTAACCGTCA
+nxOscSpeu1.1_X:12145024-     35  1.61e-11 AACAAATTTC AGAATTTGGTTATGGCACAGGCCAAGCCAAAAG TTGCAATGGG
+nxOscOnir1.2_V:1295-1395     32  2.01e-11 CCATGCGGTA TTTATCAGGCTTTGGCTTAGCCTAATCCAAAAG AGTTGAAAAC
+nxOscDolc1.1_chr_V:64715     33  2.01e-11 CGCGATAATG AACGTATGGCTGAGGCCTAGCCCAAGCCAGATC ACAGTGCGGC
+nxOscSpeu1.1_V:4685131-4     35  2.25e-11 AGCTTTGATA TTTTTTTGGTTTTGGCCAAGCTAACGCCAAAAA TATAATCTCT
+nxOscOnir1.2_X:11743750-     35  2.25e-11 CAAGAATAAC GCAAAATGGTTTAGGCCGAGCCCGAGCCAAAAT AATATTCTTC
+nxOscDolc1.1_chr_III:463     35  2.25e-11 ATGGATGTCA TGATTTTGGTTTGGGCCAAGCCAACGCCATTTA CACTTTCTAT
+nxOscDolc1.1_chr_I:41180     34  3.12e-11 TCTAGCCGAG TGTTTATGGTTTAGGCTAAGCCAAACCCAACAC AGCTCGCCAA
+nxOscDolc1.1_chr_X:38231     35  4.30e-11 AAACATGCAA TACTTTGGGCCTAGGCCAGGCCCAAGCCTAATA CTACGACTCC
+nxOscSpeu1.1_II:20352-20     32  8.02e-11 AGCCCATTGC AACTTTTGGCTTGGCCTGTGCCAGAACCAAATT CTGAAATTTG
+nxOscSper1.1_V:38084-381     32  8.87e-11 AATTTATATA AAATTTAGGTGAGGGCTCGGCCTAAGCCATATT GACTGTAAAT
+nxOscOnir1.2_III:1044932     35  8.87e-11 TCAAGGAATT GCAATTAGGCTATGGCTAAGCCAGATCCAAAAA AAAGTTGGCA
+nxOscDolc1.1_chr_I:24068     32  9.82e-11 ACTGTGGTTT AATTGATGGCTTGGGCCTGGCCTGAGCCGAAAT GTTGCGTGAA
+nxOscOnir1.2_X:5898-5998     33  1.08e-10 CAAACTCCAA TAAATTAGGGTGCGGCCGAGCCCAACCCCAATA GGTTTGGTTT
+nxOscSpeu1.1_X:3028-3128     32  1.20e-10 AGCCCATTGC AATTTGTGGCTTGGCCTGTGCCAGAACCAAATT CTGAAATTTG
+nxOscDolc1.1_chr_III:107     34  1.20e-10 AGATTACAGT ACTATATGGCTCAGGCTCAGCCACAGCCGAACC AAGGAATTAC
+nxOscDolc1.1_chr_V:64516     35  1.32e-10 GAATACGGCT TAGTTATGGCTATGGCCGAGCCCGTGCCATAGT CTATGTACCG
+nxOscTipu1.1_IV:39733-39     33  2.15e-10 TCAAAAAATA AAGTTTAGGTATAGGCTTAGCCCAACCCTTATA TATATGGCCT
+nxOscTipu1.1_IV:11179798     31  2.36e-10 GGCGCAGGAT ATAATTGGGTGCGGGCCTAGCCAAAGCCCAAAC AAACTAGGCT
+nxOscTipu1.1_III:16249-1     33  4.52e-10 GCTTGTGCCC CTCATTAGGCTGCGGCTCAGCCAATACCACAAC AAAAATGCAG
+nxOscTipu1.1_X:11175636-     34  5.42e-10 ACAAAAACGT TTACTTAGGTTCAGGCTGAGCCAAATCCAAGTC CAAACCTCAC
+nxOscSper1.1_III:61948-6     32  5.42e-10 TCGAATTTCT GATTTGCGGCGTTGGCTATGCCTAAGCCGTAAA AACTAGTAAT
+nxOscSper1.1_II:187457-1     28  5.42e-10 TTATTACATT TGCTTTTGGTTTCTGCTGTGCCGCAGCCACAAG TTCTTCTATA
+nxOscTipu1.1_III:9596280     29  7.08e-10 CAATTCCATT TTTTTGAGGCTTGGGCTTAGGCCAAAGCCCAAA GTCCGCCTGT
+nxOscSper1.1_IV:8349478-     35  1.30e-09 TATATAGAAG AACTTGTGGCTGCGGCACAGCAGAAACCGAAAG CCGAAAAGTG
+nxOscTipu1.1_V:10783407-     29  1.97e-09 AGAGCCATAT TTTTTTAGGTTTGGGCTTAGGCCGTAGCCAAAA TCAAAACACA
+nxOscSper1.1_X:4778689-4     32  2.14e-09 ATTTTTTTAA TATATTCGGCTGTGGCTTCGCCTATTCCATAAT CAAATGAAAA
+nxOscDolc1.1_chr_X:38017     34  2.74e-09 AGAAGCTGGC ACCCTCTGGCTTAGGCTAAGCCTACCCCAGATC GGCCTTCTAG
+nxOscSper1.1_I:37436-375     31  3.77e-09 GGCTCGATGT TATTTGTTGATTCGGCTGAACCTAAACCATATA GCATGCTAAT
+nxOscSper1.1_IV:73691-73     32  4.08e-09 AAAGTTGAAA ATCTTCTGGCCTGGGCATGGCCAATGCCTTATT TTATTGCAAA
+nxOscDolc1.1_chr_X:38893     33  8.15e-09 CTGAAGCCGA GCTCTTCGGAATAGGCTCAGCCTAAGCCTAGAC GCTCCTGGAG
+nxOscSper1.1_X:142202-14     31  1.18e-08 TTTTTATTCT AGTTTTTGGTTATTGCTTGACCGAAGCCGATAT CAAATCACCA
+nxOscSper1.1_X:9216225-9     36  1.27e-08 AAATATCTAG AAACTTTGGTTTTAGCAGAGCAAGATCCCAAAA TGAATCATAA
+nxOscSper1.1_V:6988816-6     35  1.47e-08 ATTTTAAAAA ATATTATGGCCATGGCGTAGCCAACGCCATTTT AAAATATATA
+nxOscSper1.1_III:7052263     35  3.40e-08 TAAATACTTT GAACTATGGCTACGGCATGGCAGTAACCGAAAT ATAATAATCC
+nxOscSper1.1_X:2337484-2     36  4.76e-08 AAAAAAAAGA TGTCATTGGCTTAGGTCAAACCAAAACCATTAG TGCAGTAAAA
+nxOscTipu1.1_V:30614-307     38  5.43e-08 ATGCCAATAG TAGTTGGGCTTCGGCCTAAGCCCAAACCTCAAA AATTGTACGT
+nxOscSper1.1_I:7780917-7     36  5.43e-08 TAATGGAAAA AGATTTTGGTTTTGGTCAAACCATGACCAAAGT ACAGTCGCTT
+nxOscTipu1.1_X:51796-518     30  1.90e-07 TGCTCAGAAA AAAGTTTGGGCTCCGGCTTGGCTAAGCCACAAA TAACACGCAT
+nxOscSpeu1.1_IV:9677760-     24  5.07e-07 GGCTTAGGCT TAGGTTAGGCTTAGGCTTAGGCTTAGGACTCAC AGTCTGTGTG
+nxOscSper1.1_X:2434204-2     31  5.35e-07 TAATGTGGTG TTATAATGGCTTTAGTTCGACCAAAGCCTTTTT AAAAAAATAT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+nxOscOnir1.2_IV:4043-414          1.7e-15  31_[+1]_37
+nxOscDolc1.1_chr_X:66840          5.9e-15  34_[+1]_34
+nxOscSpeu1.1_II:7392376-          8.7e-15  32_[+1]_36
+nxOscTipu1.1_II:25131-25          2.2e-14  32_[+1]_36
+nxOscDolc1.1_chr_II:6426          3.7e-14  32_[+1]_36
+nxOscTipu1.1_I:27135-272          4.4e-14  32_[+1]_36
+nxOscSpeu1.1_X:1324955-1          6.2e-14  34_[+1]_34
+nxOscSpeu1.1_X:9264361-9          8.6e-14  32_[+1]_36
+nxOscSpeu1.1_X:6339583-6            1e-13  30_[+1]_38
+nxOscDolc1.1_chr_I:41368            1e-13  32_[+1]_36
+nxOscOnir1.2_IV:13341612          1.2e-13  34_[+1]_34
+nxOscSpeu1.1_V:89483-895          2.6e-13  31_[+1]_37
+nxOscSpeu1.1_X:9264619-9          4.6e-13  31_[+1]_37
+nxOscSpeu1.1_I:3019237-3          4.6e-13  32_[+1]_36
+nxOscSpeu1.1_I:2982824-2          5.3e-13  34_[+1]_34
+nxOscDolc1.1_chr_IV:2338          6.1e-13  31_[+1]_37
+nxOscOnir1.2_I:9757381-9          7.1e-13  34_[+1]_34
+nxOscSpeu1.1_X:6341882-6          9.3e-13  32_[+1]_36
+nxOscDolc1.1_chr_II:6412          9.3e-13  34_[+1]_34
+nxOscDolc1.1_chr_II:6689          9.3e-13  32_[+1]_36
+nxOscSpeu1.1_V:4685520-4          1.1e-12  31_[+1]_37
+nxOscSpeu1.1_X:7669377-7          1.2e-12  34_[+1]_34
+nxOscSpeu1.1_II:7323623-          1.2e-12  33_[+1]_35
+nxOscDolc1.1_chr_III:913          1.2e-12  32_[+1]_36
+nxOscDolc1.1_chr_II:1047          1.2e-12  33_[+1]_35
+nxOscDolc1.1_chr_IV:5184          1.6e-12  33_[+1]_35
+nxOscSpeu1.1_V:10859079-          1.8e-12  34_[+1]_34
+nxOscOnir1.2_III:930-103          2.1e-12  31_[+1]_37
+nxOscDolc1.1_chr_X:44825          2.1e-12  32_[+1]_36
+nxOscDolc1.1_chr_V:16161            3e-12  32_[+1]_36
+nxOscSpeu1.1_IV:5017-511          4.4e-12  31_[+1]_37
+nxOscSpeu1.1_III:5300-54          4.4e-12  16_[+1]_52
+nxOscSper1.1_X:4766359-4          4.4e-12  33_[+1]_35
+nxOscDolc1.1_chr_X:12574          4.4e-12  34_[+1]_34
+nxOscSpeu1.1_II:10222703            5e-12  34_[+1]_34
+nxOscOnir1.2_II:10439062          7.1e-12  34_[+1]_34
+nxOscDolc1.1_chr_X:38523          7.1e-12  32_[+1]_36
+nxOscSpeu1.1_IV:6701945-            8e-12  33_[+1]_35
+nxOscTipu1.1_I:8860831-8          1.3e-11  34_[+1]_34
+nxOscSpeu1.1_IV:2621604-          1.3e-11  32_[+1]_36
+nxOscTipu1.1_II:8999711-          1.4e-11  34_[+1]_34
+nxOscDolc1.1_chr_III:466          1.4e-11  32_[+1]_36
+nxOscSpeu1.1_X:12145024-          1.6e-11  34_[+1]_34
+nxOscOnir1.2_V:1295-1395            2e-11  31_[+1]_37
+nxOscDolc1.1_chr_V:64715            2e-11  32_[+1]_36
+nxOscSpeu1.1_V:4685131-4          2.2e-11  34_[+1]_34
+nxOscOnir1.2_X:11743750-          2.2e-11  34_[+1]_34
+nxOscDolc1.1_chr_III:463          2.2e-11  34_[+1]_34
+nxOscDolc1.1_chr_I:41180          3.1e-11  33_[+1]_35
+nxOscDolc1.1_chr_X:38231          4.3e-11  34_[+1]_34
+nxOscSpeu1.1_II:20352-20            8e-11  31_[+1]_37
+nxOscSper1.1_V:38084-381          8.9e-11  31_[+1]_37
+nxOscOnir1.2_III:1044932          8.9e-11  34_[+1]_34
+nxOscDolc1.1_chr_I:24068          9.8e-11  31_[+1]_37
+nxOscOnir1.2_X:5898-5998          1.1e-10  32_[+1]_36
+nxOscSpeu1.1_X:3028-3128          1.2e-10  31_[+1]_37
+nxOscDolc1.1_chr_III:107          1.2e-10  33_[+1]_35
+nxOscDolc1.1_chr_V:64516          1.3e-10  34_[+1]_34
+nxOscTipu1.1_IV:39733-39          2.1e-10  32_[+1]_36
+nxOscTipu1.1_IV:11179798          2.4e-10  30_[+1]_38
+nxOscTipu1.1_III:16249-1          4.5e-10  32_[+1]_36
+nxOscTipu1.1_X:11175636-          5.4e-10  33_[+1]_35
+nxOscSper1.1_III:61948-6          5.4e-10  31_[+1]_37
+nxOscSper1.1_II:187457-1          5.4e-10  27_[+1]_41
+nxOscTipu1.1_III:9596280          7.1e-10  28_[+1]_40
+nxOscSper1.1_IV:8349478-          1.3e-09  34_[+1]_34
+nxOscTipu1.1_V:10783407-            2e-09  28_[+1]_40
+nxOscSper1.1_X:4778689-4          2.1e-09  31_[+1]_37
+nxOscDolc1.1_chr_X:38017          2.7e-09  33_[+1]_35
+nxOscSper1.1_I:37436-375          3.8e-09  30_[+1]_38
+nxOscSper1.1_IV:73691-73          4.1e-09  31_[+1]_37
+nxOscDolc1.1_chr_X:38893          8.1e-09  32_[+1]_36
+nxOscSper1.1_X:142202-14          1.2e-08  30_[+1]_38
+nxOscSper1.1_X:9216225-9          1.3e-08  35_[+1]_33
+nxOscSper1.1_V:6988816-6          1.5e-08  34_[+1]_34
+nxOscSper1.1_III:7052263          3.4e-08  34_[+1]_34
+nxOscSper1.1_X:2337484-2          4.8e-08  35_[+1]_33
+nxOscTipu1.1_V:30614-307          5.4e-08  37_[+1]_31
+nxOscSper1.1_I:7780917-7          5.4e-08  35_[+1]_33
+nxOscTipu1.1_X:51796-518          1.9e-07  29_[+1]_39
+nxOscSpeu1.1_IV:9677760-          5.1e-07  23_[+1]_45
+nxOscSper1.1_X:2434204-2          5.4e-07  30_[+1]_38
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW width=33 seqs=82
+nxOscOnir1.2_IV:4043-414 (   32) GATATTTGGTTTCGGCTCAGCCTAAGCCAAAAA  1 
+nxOscDolc1.1_chr_X:66840 (   35) TTGTTTAGGCTTAGGCCGAGCCTAAGCCAAAAT  1 
+nxOscSpeu1.1_II:7392376- (   33) GAAATTTGGTTTAGGCTTAGCCCGAGCCAAAAA  1 
+nxOscTipu1.1_II:25131-25 (   33) ATATTTTGGTTTCGGCTTAGCCCAAGCCGAAAG  1 
+nxOscDolc1.1_chr_II:6426 (   33) TTGTTTTGGCTATGGCTCAGCCTCAGCCAAAAA  1 
+nxOscTipu1.1_I:27135-272 (   33) TGATTTTGGCTGCGGCCGAGCCCAAACCTAAAA  1 
+nxOscSpeu1.1_X:1324955-1 (   35) AATTTTTGGATTAGGCCGAGCCAAAACCAAAAA  1 
+nxOscSpeu1.1_X:9264361-9 (   33) GTTATTTGGTTTAGGCTTGGCCCAAACCAAAAA  1 
+nxOscSpeu1.1_X:6339583-6 (   31) GTTTTTAGGCTTAGGCTTAGCCGCAGCCAAAAA  1 
+nxOscDolc1.1_chr_I:41368 (   33) TCATTGTGGCTTTGGCTGAGCCTGAGCCATATA  1 
+nxOscOnir1.2_IV:13341612 (   35) AAATTTTGGCTAAGGCTCAGCCCGACCCAAAAA  1 
+nxOscSpeu1.1_V:89483-895 (   32) AATTTTTGGATTTGGCTCGGCCTAAGCCCAAAA  1 
+nxOscSpeu1.1_X:9264619-9 (   32) ATTATTTGGCTTAGGCTTGGCCCTAACCAAAAA  1 
+nxOscSpeu1.1_I:3019237-3 (   33) ATGTTTTGGGTTAGGCTCAGCCTTAGCCAAAAT  1 
+nxOscSpeu1.1_I:2982824-2 (   35) AAATTATGGTTAAGGCATAGCCAAAGCCAAAAA  1 
+nxOscDolc1.1_chr_IV:2338 (   32) TTATTTTGGCTGCGGCTTGGCCCAAGCCTAACT  1 
+nxOscOnir1.2_I:9757381-9 (   35) TTGGTTTGGTTTAGGCCGAGCCGAAGCCATACA  1 
+nxOscSpeu1.1_X:6341882-6 (   33) ATATTTTGGGTTAGGCATAGCCTCAGCCAAAAT  1 
+nxOscDolc1.1_chr_II:6412 (   35) ATTTTTTGGCTTGGGCCTAGCCGAAGCCAGACC  1 
+nxOscDolc1.1_chr_II:6689 (   33) TATATATGGCTTCGGCCCAGCCACAGCCATAAT  1 
+nxOscSpeu1.1_V:4685520-4 (   32) TGACTGTGGCTTAGGCTGGGCCTAACCCAAAAT  1 
+nxOscSpeu1.1_X:7669377-7 (   35) ATTGTTTGGCTCAGGCCGCGCCTAAGCCAAAAT  1 
+nxOscSpeu1.1_II:7323623- (   34) CGATTTTGGTTTTGGCTATGCCTAAACCAAAAA  1 
+nxOscDolc1.1_chr_III:913 (   33) TGTTTTTGGCACGGGCCGAGCCAAAGCCACAAA  1 
+nxOscDolc1.1_chr_II:1047 (   34) TACTTGTGGTTTTGGCTCGGCCTGAGCCATATA  1 
+nxOscDolc1.1_chr_IV:5184 (   34) GGACTTTGGCATAGGCTGAGCCTAAGCCAAACA  1 
+nxOscSpeu1.1_V:10859079- (   35) TAAATTTGGTTCTGGCACAGGCCAAGCCAAAAA  1 
+nxOscOnir1.2_III:930-103 (   32) TTTTTTTGGCTGTGGCTAAGCCAAAGCCTGATT  1 
+nxOscDolc1.1_chr_X:44825 (   33) CCAATTTGGCTTAGGCTGAGCCCAAGCCACAGT  1 
+nxOscDolc1.1_chr_V:16161 (   33) TTGGTTCGGCTGTGGCTGAGCCTGAGCCATAAA  1 
+nxOscSpeu1.1_IV:5017-511 (   32) AGAATTTGGTTTCGGCTATGCCTAAACCACAAA  1 
+nxOscSpeu1.1_III:5300-54 (   17) AGAATTTGGTTTCGGCTATGCCTAAACCACAAA  1 
+nxOscSper1.1_X:4766359-4 (   34) CTATTCTGGTTTAGGCTCAGCCTATGCCATAAA  1 
+nxOscDolc1.1_chr_X:12574 (   35) TGATTATGGCTGTGGCACAGCCCAAACCAAATG  1 
+nxOscSpeu1.1_II:10222703 (   35) GAAGTTTGGTTCTGGCACAGGCCAAGCCAAAAA  1 
+nxOscOnir1.2_II:10439062 (   35) TTTTTTTGGATGAGGCCGAGCCGAAACCTAATA  1 
+nxOscDolc1.1_chr_X:38523 (   33) GCTGTATGGTTTTGGCTTAGCCGAAGCCTTAAA  1 
+nxOscSpeu1.1_IV:6701945- (   34) TTTTTTTGGTTTTGGCTCAGCCATAACCTAAGT  1 
+nxOscTipu1.1_I:8860831-8 (   35) TTTTTGGGGTTTGGGCCCGGCCAAAGCCCAAAG  1 
+nxOscSpeu1.1_IV:2621604- (   33) CCTTTTTGGTTTCGGCTCAGCCTCAGCCTAACC  1 
+nxOscTipu1.1_II:8999711- (   35) AAAGTTAGGCCGAGGCCGAGCCCAAACCAAATA  1 
+nxOscDolc1.1_chr_III:466 (   33) TAGTATTGGTTCCGGCCCAGCCTAAGCCAATAA  1 
+nxOscSpeu1.1_X:12145024- (   35) AGAATTTGGTTATGGCACAGGCCAAGCCAAAAG  1 
+nxOscOnir1.2_V:1295-1395 (   32) TTTATCAGGCTTTGGCTTAGCCTAATCCAAAAG  1 
+nxOscDolc1.1_chr_V:64715 (   33) AACGTATGGCTGAGGCCTAGCCCAAGCCAGATC  1 
+nxOscSpeu1.1_V:4685131-4 (   35) TTTTTTTGGTTTTGGCCAAGCTAACGCCAAAAA  1 
+nxOscOnir1.2_X:11743750- (   35) GCAAAATGGTTTAGGCCGAGCCCGAGCCAAAAT  1 
+nxOscDolc1.1_chr_III:463 (   35) TGATTTTGGTTTGGGCCAAGCCAACGCCATTTA  1 
+nxOscDolc1.1_chr_I:41180 (   34) TGTTTATGGTTTAGGCTAAGCCAAACCCAACAC  1 
+nxOscDolc1.1_chr_X:38231 (   35) TACTTTGGGCCTAGGCCAGGCCCAAGCCTAATA  1 
+nxOscSpeu1.1_II:20352-20 (   32) AACTTTTGGCTTGGCCTGTGCCAGAACCAAATT  1 
+nxOscSper1.1_V:38084-381 (   32) AAATTTAGGTGAGGGCTCGGCCTAAGCCATATT  1 
+nxOscOnir1.2_III:1044932 (   35) GCAATTAGGCTATGGCTAAGCCAGATCCAAAAA  1 
+nxOscDolc1.1_chr_I:24068 (   32) AATTGATGGCTTGGGCCTGGCCTGAGCCGAAAT  1 
+nxOscOnir1.2_X:5898-5998 (   33) TAAATTAGGGTGCGGCCGAGCCCAACCCCAATA  1 
+nxOscSpeu1.1_X:3028-3128 (   32) AATTTGTGGCTTGGCCTGTGCCAGAACCAAATT  1 
+nxOscDolc1.1_chr_III:107 (   34) ACTATATGGCTCAGGCTCAGCCACAGCCGAACC  1 
+nxOscDolc1.1_chr_V:64516 (   35) TAGTTATGGCTATGGCCGAGCCCGTGCCATAGT  1 
+nxOscTipu1.1_IV:39733-39 (   33) AAGTTTAGGTATAGGCTTAGCCCAACCCTTATA  1 
+nxOscTipu1.1_IV:11179798 (   31) ATAATTGGGTGCGGGCCTAGCCAAAGCCCAAAC  1 
+nxOscTipu1.1_III:16249-1 (   33) CTCATTAGGCTGCGGCTCAGCCAATACCACAAC  1 
+nxOscTipu1.1_X:11175636- (   34) TTACTTAGGTTCAGGCTGAGCCAAATCCAAGTC  1 
+nxOscSper1.1_III:61948-6 (   32) GATTTGCGGCGTTGGCTATGCCTAAGCCGTAAA  1 
+nxOscSper1.1_II:187457-1 (   28) TGCTTTTGGTTTCTGCTGTGCCGCAGCCACAAG  1 
+nxOscTipu1.1_III:9596280 (   29) TTTTTGAGGCTTGGGCTTAGGCCAAAGCCCAAA  1 
+nxOscSper1.1_IV:8349478- (   35) AACTTGTGGCTGCGGCACAGCAGAAACCGAAAG  1 
+nxOscTipu1.1_V:10783407- (   29) TTTTTTAGGTTTGGGCTTAGGCCGTAGCCAAAA  1 
+nxOscSper1.1_X:4778689-4 (   32) TATATTCGGCTGTGGCTTCGCCTATTCCATAAT  1 
+nxOscDolc1.1_chr_X:38017 (   34) ACCCTCTGGCTTAGGCTAAGCCTACCCCAGATC  1 
+nxOscSper1.1_I:37436-375 (   31) TATTTGTTGATTCGGCTGAACCTAAACCATATA  1 
+nxOscSper1.1_IV:73691-73 (   32) ATCTTCTGGCCTGGGCATGGCCAATGCCTTATT  1 
+nxOscDolc1.1_chr_X:38893 (   33) GCTCTTCGGAATAGGCTCAGCCTAAGCCTAGAC  1 
+nxOscSper1.1_X:142202-14 (   31) AGTTTTTGGTTATTGCTTGACCGAAGCCGATAT  1 
+nxOscSper1.1_X:9216225-9 (   36) AAACTTTGGTTTTAGCAGAGCAAGATCCCAAAA  1 
+nxOscSper1.1_V:6988816-6 (   35) ATATTATGGCCATGGCGTAGCCAACGCCATTTT  1 
+nxOscSper1.1_III:7052263 (   35) GAACTATGGCTACGGCATGGCAGTAACCGAAAT  1 
+nxOscSper1.1_X:2337484-2 (   36) TGTCATTGGCTTAGGTCAAACCAAAACCATTAG  1 
+nxOscTipu1.1_V:30614-307 (   38) TAGTTGGGCTTCGGCCTAAGCCCAAACCTCAAA  1 
+nxOscSper1.1_I:7780917-7 (   36) AGATTTTGGTTTTGGTCAAACCATGACCAAAGT  1 
+nxOscTipu1.1_X:51796-518 (   30) AAAGTTTGGGCTCCGGCTTGGCTAAGCCACAAA  1 
+nxOscSpeu1.1_IV:9677760- (   24) TAGGTTAGGCTTAGGCTTAGGCTTAGGACTCAC  1 
+nxOscSper1.1_X:2434204-2 (   31) TTATAATGGCTTTAGTTCGACCAAAGCCTTTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 33 n= 5988 bayes= 8.25035 E= 1.8e-522 
+    25   -173    -41     53 
+    25    -89     -9     21 
+    39    -89    -67     31 
+   -49   -106    -82     96 
+  -266  -1300   -399    167 
+   -96   -205    -67    119 
+   -96   -205   -199    134 
+ -1300  -1300    235   -459 
+ -1300   -405    235  -1300 
+  -234    127   -199     45 
+  -266   -173   -241    153 
+  -134    -89    -41    108 
+    20     -6    -29     -1 
+  -366   -405    227   -359 
+ -1300   -247    231  -1300 
+ -1300    223   -399   -301 
+  -134     53   -399     96 
+   -85     40     46     -1 
+   120   -305    -19   -160 
+  -234  -1300    227  -1300 
+ -1300    217   -119  -1300 
+  -307    223  -1300   -459 
+   -14     40    -82     21 
+   115   -125    -29   -201 
+   149   -205   -399   -201 
+   -20   -147    162   -227 
+ -1300    225   -241  -1300 
+  -465    228  -1300  -1300 
+   110   -106   -119    -89 
+    99    -89   -199    -35 
+   151   -305   -299   -201 
+   104   -147   -199    -27 
+    66    -60    -99     -7 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 33 nsites= 82 E= 1.8e-522 
+ 0.365854  0.060976  0.146341  0.426829 
+ 0.365854  0.109756  0.182927  0.341463 
+ 0.402439  0.109756  0.121951  0.365854 
+ 0.219512  0.097561  0.109756  0.573171 
+ 0.048780  0.000000  0.012195  0.939024 
+ 0.158537  0.048780  0.121951  0.670732 
+ 0.158537  0.048780  0.048780  0.743902 
+ 0.000000  0.000000  0.987805  0.012195 
+ 0.000000  0.012195  0.987805  0.000000 
+ 0.060976  0.487805  0.048780  0.402439 
+ 0.048780  0.060976  0.036585  0.853659 
+ 0.121951  0.109756  0.146341  0.621951 
+ 0.353659  0.195122  0.158537  0.292683 
+ 0.024390  0.012195  0.939024  0.024390 
+ 0.000000  0.036585  0.963415  0.000000 
+ 0.000000  0.951220  0.012195  0.036585 
+ 0.121951  0.292683  0.012195  0.573171 
+ 0.170732  0.268293  0.268293  0.292683 
+ 0.707317  0.024390  0.170732  0.097561 
+ 0.060976  0.000000  0.939024  0.000000 
+ 0.000000  0.914634  0.085366  0.000000 
+ 0.036585  0.951220  0.000000  0.012195 
+ 0.280488  0.268293  0.109756  0.341463 
+ 0.682927  0.085366  0.158537  0.073171 
+ 0.865854  0.048780  0.012195  0.073171 
+ 0.268293  0.073171  0.597561  0.060976 
+ 0.000000  0.963415  0.036585  0.000000 
+ 0.012195  0.987805  0.000000  0.000000 
+ 0.658537  0.097561  0.085366  0.158537 
+ 0.609756  0.109756  0.048780  0.231707 
+ 0.878049  0.024390  0.024390  0.073171 
+ 0.634146  0.073171  0.048780  0.243902 
+ 0.487805  0.134146  0.097561  0.280488 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WDWTTTTGGYTTHGGCYNAGCCHAAGCCAAAAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][AT][AT][TA]TTTGG[CT]TT[AT]GGC[TC][TCG]AGCC[TAC]AA[GA]CCA[AT]A[AT][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  4.26 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATAGCWGCTAT MEME-2	width =  11  sites =  15  llr = 173  E-value = 2.5e-010
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATAGCWGCTAT MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  7:a1:51::9:
+pos.-specific     C  ::::91:a::1
+probability       G  31:91:9::11
+matrix            T  :9::14::a:8
+
+         bits    2.4        *   
+                 2.1        *   
+                 1.9    *  **   
+                 1.7   *** ***  
+Relative         1.4  **** **** 
+Entropy          1.2  **** **** 
+(16.6 bits)      0.9 ***** *****
+                 0.7 ***** *****
+                 0.5 ***********
+                 0.2 ***********
+                 0.0 -----------
+
+Multilevel           ATAGCAGCTAT
+consensus            G    T     
+sequence                        
+                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGCWGCTAT MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site  
+-------------             ----- ---------            -----------
+nxOscSper1.1_X:9216225-9     80  3.58e-07 GAATCATAAC ATAGCAGCTAT AAGGATAATC
+nxOscSper1.1_X:2337484-2     79  3.58e-07 TGCAGTAAAA ATAGCAGCTAT TAAAAATGCA
+nxOscSper1.1_III:7052263     15  7.02e-07 AAGACCAAAG ATAGCTGCTAT AAATACTTTG
+nxOscSper1.1_X:142202-14     10  1.14e-06  GAAAAAAGT GTAGCTGCTAT TTTTTATTCT
+nxOscSper1.1_IV:8349478-     15  1.14e-06 ACGTACGCAG GTAGCTGCTAT ATATAGAAGA
+nxOscSper1.1_II:187457-1     72  1.39e-06 TCTTCTATAT ATAGCAGCTAC CTGCATACGT
+nxOscSper1.1_III:61948-6     76  2.02e-06 ACTAGTAATT GTAGCAGCTAC AGTAGATTTC
+nxOscSper1.1_I:7780917-7     80  2.25e-06 CAGTCGCTTT ATAGCAGCTAG AAATATGTAA
+nxOscSper1.1_X:4778689-4     13  2.55e-06 TATTCATGAT GTAGCCGCTAT TTTTTTAATA
+nxOscSper1.1_V:38084-381     76  3.24e-06 ACTGTAAATA ATAGCAGCTGT GCAGCTTAAA
+nxOscSper1.1_IV:73691-73     77  3.24e-06 ATTGCAAAAT AGAGCAGCTAT ATCATCATTA
+nxOscSper1.1_X:2434204-2     11  4.50e-06 TATAATGGGT ATAGGTGCTAT AATGTGGTGT
+nxOscSper1.1_X:4766359-4     15  7.74e-06 TTCCCAGGTC ATAGTTGCTAT GTTTTAGGCT
+nxOscSper1.1_I:37436-375     74  7.74e-06 GCATGCTAAT ATAGCAACTAT GGTTATGTCT
+nxOscSper1.1_V:6988816-6     14  9.04e-06 TCCATCGAGT ATAACTGCTAT ATTTTAAAAA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGCWGCTAT MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+nxOscSper1.1_X:9216225-9          3.6e-07  79_[+2]_11
+nxOscSper1.1_X:2337484-2          3.6e-07  78_[+2]_12
+nxOscSper1.1_III:7052263            7e-07  14_[+2]_76
+nxOscSper1.1_X:142202-14          1.1e-06  9_[+2]_81
+nxOscSper1.1_IV:8349478-          1.1e-06  14_[+2]_76
+nxOscSper1.1_II:187457-1          1.4e-06  71_[+2]_19
+nxOscSper1.1_III:61948-6            2e-06  75_[+2]_15
+nxOscSper1.1_I:7780917-7          2.3e-06  79_[+2]_11
+nxOscSper1.1_X:4778689-4          2.6e-06  12_[+2]_78
+nxOscSper1.1_V:38084-381          3.2e-06  75_[+2]_15
+nxOscSper1.1_IV:73691-73          3.2e-06  76_[+2]_14
+nxOscSper1.1_X:2434204-2          4.5e-06  10_[+2]_80
+nxOscSper1.1_X:4766359-4          7.7e-06  14_[+2]_76
+nxOscSper1.1_I:37436-375          7.7e-06  73_[+2]_17
+nxOscSper1.1_V:6988816-6            9e-06  13_[+2]_77
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGCWGCTAT MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATAGCWGCTAT width=11 seqs=15
+nxOscSper1.1_X:9216225-9 (   80) ATAGCAGCTAT  1 
+nxOscSper1.1_X:2337484-2 (   79) ATAGCAGCTAT  1 
+nxOscSper1.1_III:7052263 (   15) ATAGCTGCTAT  1 
+nxOscSper1.1_X:142202-14 (   10) GTAGCTGCTAT  1 
+nxOscSper1.1_IV:8349478- (   15) GTAGCTGCTAT  1 
+nxOscSper1.1_II:187457-1 (   72) ATAGCAGCTAC  1 
+nxOscSper1.1_III:61948-6 (   76) GTAGCAGCTAC  1 
+nxOscSper1.1_I:7780917-7 (   80) ATAGCAGCTAG  1 
+nxOscSper1.1_X:4778689-4 (   13) GTAGCCGCTAT  1 
+nxOscSper1.1_V:38084-381 (   76) ATAGCAGCTGT  1 
+nxOscSper1.1_IV:73691-73 (   77) AGAGCAGCTAT  1 
+nxOscSper1.1_X:2434204-2 (   11) ATAGGTGCTAT  1 
+nxOscSper1.1_X:4766359-4 (   15) ATAGTTGCTAT  1 
+nxOscSper1.1_I:37436-375 (   74) ATAGCAACTAT  1 
+nxOscSper1.1_V:6988816-6 (   14) ATAACTGCTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGCWGCTAT MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 11 n= 7924 bayes= 10.3186 E= 2.5e-010 
+   125  -1055     46  -1055 
+ -1055  -1055   -154    166 
+   170  -1055  -1055  -1055 
+  -220  -1055    226  -1055 
+ -1055    209   -154   -214 
+    79   -160  -1055     44 
+  -220  -1055    226  -1055 
+ -1055    230  -1055  -1055 
+ -1055  -1055  -1055    176 
+   160  -1055   -154  -1055 
+ -1055    -60   -154    144 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGCWGCTAT MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 11 nsites= 15 E= 2.5e-010 
+ 0.733333  0.000000  0.266667  0.000000 
+ 0.000000  0.000000  0.066667  0.933333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.066667  0.000000  0.933333  0.000000 
+ 0.000000  0.866667  0.066667  0.066667 
+ 0.533333  0.066667  0.000000  0.400000 
+ 0.066667  0.000000  0.933333  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.933333  0.000000  0.066667  0.000000 
+ 0.000000  0.133333  0.066667  0.800000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATAGCWGCTAT MEME-2 regular expression
+--------------------------------------------------------------------------------
+[AG]TAGC[AT]GCTAT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  6.52 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+nxOscDolc1.1_chr_I:24068         5.24e-08  31_[+1(9.82e-11)]_37
+nxOscDolc1.1_chr_I:41180         4.37e-08  33_[+1(3.12e-11)]_35
+nxOscDolc1.1_chr_I:41368         2.79e-11  32_[+1(1.01e-13)]_36
+nxOscDolc1.1_chr_I:11141         4.64e-01  101
+nxOscDolc1.1_chr_II:6689         2.90e-10  32_[+1(9.30e-13)]_36
+nxOscDolc1.1_chr_II:6412         1.38e-09  34_[+1(9.30e-13)]_34
+nxOscDolc1.1_chr_II:6426         4.20e-11  32_[+1(3.75e-14)]_36
+nxOscDolc1.1_chr_II:1047         3.27e-10  33_[+1(1.22e-12)]_35
+nxOscDolc1.1_chr_III:913         8.25e-10  32_[+1(1.22e-12)]_36
+nxOscDolc1.1_chr_III:463         2.10e-08  34_[+1(2.25e-11)]_34
+nxOscDolc1.1_chr_III:466         2.12e-08  32_[+1(1.44e-11)]_36
+nxOscDolc1.1_chr_III:107         1.50e-07  33_[+1(1.20e-10)]_35
+nxOscDolc1.1_chr_IV:2338         3.50e-10  31_[+1(6.13e-13)]_37
+nxOscDolc1.1_chr_IV:5184         1.57e-09  33_[+1(1.59e-12)]_35
+nxOscDolc1.1_chr_IV:1245         9.18e-01  101
+nxOscDolc1.1_chr_V:16161         3.10e-09  32_[+1(3.03e-12)]_36
+nxOscDolc1.1_chr_V:64516         3.12e-08  34_[+1(1.32e-10)]_34
+nxOscDolc1.1_chr_V:64715         2.53e-08  32_[+1(2.01e-11)]_36
+nxOscDolc1.1_chr_V:11200         9.23e-01  101
+nxOscDolc1.1_chr_X:44825         3.25e-09  32_[+1(2.07e-12)]_36
+nxOscDolc1.1_chr_X:38017         1.90e-07  33_[+1(2.74e-09)]_35
+nxOscDolc1.1_chr_X:38231         5.91e-08  34_[+1(4.30e-11)]_34
+nxOscDolc1.1_chr_X:38523         7.62e-09  32_[+1(7.14e-12)]_36
+nxOscDolc1.1_chr_X:38893         5.29e-06  32_[+1(8.15e-09)]_36
+nxOscDolc1.1_chr_X:66840         7.60e-12  34_[+1(5.89e-15)]_34
+nxOscDolc1.1_chr_X:12574         1.85e-09  34_[+1(4.40e-12)]_34
+nxOscOnir1.2_I:9757381-9         2.95e-10  34_[+1(7.05e-13)]_34
+nxOscOnir1.2_II:10439062         8.50e-09  34_[+1(7.14e-12)]_34
+nxOscOnir1.2_III:930-103         1.04e-09  31_[+1(2.07e-12)]_37
+nxOscOnir1.2_III:1044932         2.28e-08  34_[+1(8.87e-11)]_34
+nxOscOnir1.2_IV:4043-414         3.31e-12  31_[+1(1.67e-15)]_37
+nxOscOnir1.2_IV:13341612         1.84e-10  34_[+1(1.19e-13)]_34
+nxOscOnir1.2_V:1295-1395         2.78e-08  31_[+1(2.01e-11)]_37
+nxOscOnir1.2_X:5898-5998         1.39e-07  32_[+1(1.08e-10)]_36
+nxOscOnir1.2_X:11743750-         1.82e-08  34_[+1(2.25e-11)]_34
+nxOscSper1.1_I:37436-375         4.29e-09  30_[+1(3.77e-09)]_10_[+2(7.74e-06)]_\
+    17
+nxOscSper1.1_I:7780917-7         1.69e-08  35_[+1(5.43e-08)]_11_[+2(2.25e-06)]_\
+    11
+nxOscSper1.1_II:187457-1         1.28e-10  27_[+1(5.42e-10)]_11_[+2(1.39e-06)]_\
+    19
+nxOscSper1.1_III:61948-6         1.83e-10  31_[+1(5.42e-10)]_11_[+2(2.02e-06)]_\
+    15
+nxOscSper1.1_III:7052263         3.54e-09  14_[+2(7.02e-07)]_9_[+1(3.40e-08)]_\
+    34
+nxOscSper1.1_IV:73691-73         2.01e-09  31_[+1(4.08e-09)]_12_[+2(3.24e-06)]_\
+    14
+nxOscSper1.1_IV:8349478-         2.46e-10  14_[+2(1.14e-06)]_9_[+1(1.30e-09)]_\
+    34
+nxOscSper1.1_V:38084-381         5.06e-11  31_[+1(8.87e-11)]_11_[+2(3.24e-06)]_\
+    15
+nxOscSper1.1_V:6988816-6         1.83e-08  13_[+2(9.04e-06)]_10_[+1(1.47e-08)]_\
+    34
+nxOscSper1.1_X:142202-14         2.05e-09  9_[+2(1.14e-06)]_10_[+1(1.18e-08)]_\
+    38
+nxOscSper1.1_X:2337484-2         2.56e-09  35_[+1(4.76e-08)]_10_[+2(3.58e-07)]_\
+    12
+nxOscSper1.1_X:2434204-2         2.87e-07  10_[+2(4.50e-06)]_9_[+1(5.35e-07)]_\
+    38
+nxOscSper1.1_X:4766359-4         6.46e-12  14_[+2(7.74e-06)]_8_[+1(4.40e-12)]_\
+    35
+nxOscSper1.1_X:4778689-4         8.61e-10  12_[+2(2.55e-06)]_8_[+1(2.14e-09)]_\
+    37
+nxOscSper1.1_X:9216225-9         7.22e-10  35_[+1(1.27e-08)]_11_[+2(3.58e-07)]_\
+    11
+nxOscSpeu1.1_I:2982824-2         3.00e-10  34_[+1(5.32e-13)]_34
+nxOscSpeu1.1_I:3019237-3         2.78e-10  32_[+1(4.61e-13)]_36
+nxOscSpeu1.1_II:20352-20         3.44e-08  31_[+1(8.02e-11)]_37
+nxOscSpeu1.1_II:7323623-         9.29e-10  33_[+1(1.22e-12)]_35
+nxOscSpeu1.1_II:7392376-         6.56e-12  32_[+1(8.72e-15)]_36
+nxOscSpeu1.1_II:10222703         7.41e-09  34_[+1(4.98e-12)]_34
+nxOscSpeu1.1_III:5300-54         5.30e-09  16_[+1(4.40e-12)]_52
+nxOscSpeu1.1_III:5646458         6.48e-02  101
+nxOscSpeu1.1_III:9503266         2.66e-01  101
+nxOscSpeu1.1_IV:5017-511         5.30e-09  31_[+1(4.40e-12)]_37
+nxOscSpeu1.1_IV:2621604-         8.84e-09  32_[+1(1.28e-11)]_36
+nxOscSpeu1.1_IV:6701945-         1.13e-08  33_[+1(8.04e-12)]_35
+nxOscSpeu1.1_IV:9677760-         3.78e-04  23_[+1(5.07e-07)]_45
+nxOscSpeu1.1_V:89483-895         1.58e-10  31_[+1(2.57e-13)]_37
+nxOscSpeu1.1_V:4685131-4         1.65e-08  34_[+1(2.25e-11)]_34
+nxOscSpeu1.1_V:4685520-4         1.24e-09  31_[+1(1.07e-12)]_37
+nxOscSpeu1.1_V:10859079-         2.73e-09  34_[+1(1.81e-12)]_34
+nxOscSpeu1.1_X:3028-3128         1.53e-07  31_[+1(1.20e-10)]_37
+nxOscSpeu1.1_X:1324955-1         1.03e-10  34_[+1(6.22e-14)]_34
+nxOscSpeu1.1_X:6339583-6         8.31e-11  30_[+1(1.01e-13)]_38
+nxOscSpeu1.1_X:6341882-6         1.61e-10  32_[+1(9.30e-13)]_36
+nxOscSpeu1.1_X:7669377-7         1.80e-10  34_[+1(1.22e-12)]_34
+nxOscSpeu1.1_X:7673330-7         8.33e-01  101
+nxOscSpeu1.1_X:9264361-9         1.22e-10  32_[+1(8.64e-14)]_36
+nxOscSpeu1.1_X:9264619-9         7.62e-10  31_[+1(4.61e-13)]_37
+nxOscSpeu1.1_X:12145024-         7.56e-09  34_[+1(1.61e-11)]_34
+nxOscTipu1.1_I:27135-272         4.77e-11  32_[+1(4.45e-14)]_36
+nxOscTipu1.1_I:8860831-8         8.98e-09  34_[+1(1.28e-11)]_34
+nxOscTipu1.1_II:25131-25         4.29e-11  32_[+1(2.21e-14)]_36
+nxOscTipu1.1_II:8999711-         1.31e-08  34_[+1(1.44e-11)]_34
+nxOscTipu1.1_III:16249-1         5.58e-07  32_[+1(4.52e-10)]_36
+nxOscTipu1.1_III:9596280         8.44e-07  28_[+1(7.08e-10)]_40
+nxOscTipu1.1_IV:39733-39         2.78e-07  32_[+1(2.15e-10)]_36
+nxOscTipu1.1_IV:11179798         3.03e-07  30_[+1(2.36e-10)]_38
+nxOscTipu1.1_V:30614-307         6.83e-06  37_[+1(5.43e-08)]_31
+nxOscTipu1.1_V:10783407-         1.20e-06  28_[+1(1.97e-09)]_40
+nxOscTipu1.1_X:51796-518         6.94e-05  29_[+1(1.90e-07)]_39
+nxOscTipu1.1_X:11175636-         6.37e-07  33_[+1(5.42e-10)]_35
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because motif E-value > 1.00e-02.
+********************************************************************************
+
+CPU: farm5-head2
+
+********************************************************************************

@@ -1,0 +1,140 @@
+O. tipulae position more than 200X neighboring a region less than 90X
+I	27185
+I	8860880
+II	25181
+II	8999760
+III	16299
+III	9596329
+IV	39783
+IV	11179847
+V	30664
+V	10783456
+X	51846
+X	11175685
+
+
+sequence_name   start   stop    strand  score   p-value q-value matched_sequence
+contig_23       37596   37624   +       33.8776 2.75e-12        6.47e-05        TTTTGGTTTCTGCTGT*GCCGCAGCCACAA	*
+contig_21       59148   59176   +       33.2347 5.4e-12 		6.47e-05        TTGCGGCGTTGGCTATGC*CTAA-GCCGTAA	*-
+contig_16       2382363 2382391 +       33.1531 5.86e-12        6.47e-05        TTCTGGTTTAGGC-T*CAGCCTATGCCATAA	*-
+contig_22       64784   64812   +       29.7959 1.19e-10        0.000982        TTTAGGTGAGGGCTCG*GCCTAAGCCATAT	*
+contig_20       30274   30302   +       28.8061 2.53e-10        0.00168 		TTGTTGATTCGGCTGAA*CCTAA-ACCATAT	*-
+contig_22       7000862 7000890 +       28.2755 3.73e-10        0.00168 		TTATGGCCATGGC-z(G)TTAG*CCAACGCCATTT	*-z
+scaffold_108    1296113 1296141 +       28.2347 3.84e-10        0.00168 		TATCGGCTTCGG*xTCAAGCAATAACCAAAA	*x
+contig_21       7049527 7049555 -       28.1531 4.07e-10        0.00168 		TTTCGGTTACTGCC*ATGCCGTAGCCATAG	*
+contig_21       2124241 2124269 -       27.602  5.97e-10        0.00219 		TTGTTGCTGTTGTTGAGCCAAAGCCAAAA	NO diminution
+contig_16       2394691 2394719 +       27.0102 8.87e-10        0.00293 		ATTCGGCTGTGGCTTC*GCCTATTCCATAA	*
+contig_20       7776470 7776498 -       26.8469 9.86e-10        0.00297 		CTTTGGTCATGGTTTGA*xCCAAAACCAAAA	*x
+contig_29       2290    2318    -       26.1837 1.5e-09 		0.00415 		CTTAGGCTTAGG*CTAAGCCTAAGCCTAAG	*?
+scaffold_18     29289   29317   +       25.7551 1.96e-09        0.00499 		TAATGGTTTTGGTTTGAx*CCTAAGCCAATG	*x(A->G)
+contig_16       6834244 6834272 +       23.9082 5.66e-09        0.0134  		CTTTGGTT-TTAG*CAGAGCAAGATCCCAAA	*-
+contig_23       3400064 3400092 +       23.5918 6.71e-09        0.0148  		TATTGGCTTCGGTTTGGCCATTGCCTTTG	NO diminution
+contig_10       489495  489523  -       23.4286 7.32e-09        0.0151  		TTCTGGCCTGGGCATGGC*CAATGCCTTAT	*N
+contig_16       50195   50223   +       23.2449 8.07e-09        0.0153  		TAATGGCTTTAGTTCGAx*CCAAAGCCTTTT	x*
+contig_16       3893102 3893130 +       23.1837 8.33e-09        0.0153  		CTTTGGTTAAAGCATTACCAATGCCATAT	NO diminution
+contig_23       7956049 7956077 -       21.1837 2.26e-08        0.0394  		TATTGGATGGGGCTTTGCCATAGCCTTTT	NO diminution
+contig_10       385226  385254  -       20.0102 3.9e-08 		0.0592  		TTTTGGTTTAGGCTGGAAAAGAGCCAAAT	NO diminution
+tig00000167     8175394 8175422 -       20.0102 3.9e-08 		0.0592  		TTTTGGTTTAGGCTGGAAAAGAGCCAAAT	NO diminution
+tig00000167     5713360 5713388 +       19.9898 3.94e-08        0.0592  		TGTTGGTTTTTGCTGAGCAGGCACCAAAA	NO diminution
+contig_22       3253280 3253308 -       19.0612 5.97e-08        0.0859  		TTCTGGATTCTGTTGATCCAAAGCCATTT	NO diminution
+
+
+x=addition of a single base by hypothetical healing
+z=miscalled base due to similarity with telomeric repeat
+
+
+DF5120 canu_plus_flye diminution sites
+contig_23	37612
+scaffold_19	67903
+contig_20	30291
+contig_20	7776482
+contig_21	59160
+contig_21	7049540
+contig_22	20209
+contig_22	64800
+contig_22	7000879
+contig_16	50212
+contig_16	2382377
+contig_16	2394707
+contig_16	6834256
+scaffold_108	1296125
+
+
+bioawk -t '{print $1":"$2-200"-"$2+200}' diminutions_pos.tsv | xargs samtools faidx assembly.fasta > DF5120_diminution_400.fasta
+
+bioawk -t '{print $1":"$2-15"-"$2+15}' DF5120_diminution_pos.tsv | xargs samtools faidx DF5120_flye_and_canu.fasta > DF5120_diminution_30.fasta
+
+
+clustalw DF5120_diminution_30.fasta -align
+hmmbuild DF5120_diminution_30.hmm DF5120_diminution_30.aln
+nhmmer --noali --cpu 8 DF5120_diminution_30.hmm DF5120_flye_and_canu.fasta > DF5120_flye_and_canu.hmmOut.txt
+awk 'BEGIN{OFS="\t"; print "evalue\tSequence\tstart\tend"}(NR>16){print $1,$4,$5,$6}' DF5120_flye_and_canu.hmmOut.txt > DF5120_flye_and_canu.hmmOut.tsv
+
+clustalw meme_selected_DF5120_sites.fasta -align
+hmmbuild meme_selected_DF5120_sites.hmm meme_selected_DF5120_sites.aln
+nhmmer --noali --cpu 8 meme_selected_DF5120_sites.hmm ~/analyses/curate_DF5120/dot/DF5120_manual_mix_canu_plus_canu.fasta > DF5120_manual_mix.hmmOut.txt
+awk 'BEGIN{OFS="\t"; print "evalue\tSequence\tstart\tend"}(NR>16){print $1,$4,$5,$6}' DF5120_flye_and_canu.hmmOut.txt > DF5120_flye_and_canu.hmmOut.tsv
+
+
+
+
+
+
+
+
+
+
+contig_23       4406308 4406336 -       18.1939 8.7e-08 		0.108   TTCTGGCTTCTCCTTTACAAAATCCATAT
+tig00000167     6254405 6254433 +       18.1327 8.93e-08        0.108   TGGTGGTTGTGGCACAACCAATACCAAAT
+contig_20       895879  895907  +       18.0816 9.13e-08        0.108   AAGTGGCTACTGCTCGGCCGAATCCTCTT
+contig_20       4810341 4810369 -       18.0714 9.17e-08        0.108   TTTTTGAGTGGGCAAAACATTAGCCTAAA
+contig_21       1594875 1594903 +       18.051  9.25e-08        0.108   TTCTGGCGGTGGCCATGCCAAAATCAAAT
+contig_20       5708528 5708556 +       17.9592 9.62e-08        0.108   CTTCGGACTGGGTAGAGCCTGATCCAAAG
+contig_16       2259231 2259259 +       17.9082 9.83e-08        0.108   CTACGGTGTGTGCTACACAATAGCCACTA
+contig_23       3366878 3366906 +       17.6633 1.09e-07        0.116   TTTCTGTTTCTGCTCCGCGAAGGCCAAAT
+contig_20       7029920 7029948 -       17.1633 1.34e-07        0.139   TAATTGCTATTGTTTCACAACAACCAAAA
+contig_29       2296    2324    -       17.0102 1.43e-07        0.144   CTTAGGCTTAGGCTTAGGCTAAGCCTAAG
+contig_20       1441450 1441478 +       16.7959 1.57e-07        0.148   TTTCTTTCTCGGCTCTGCCATAGCCTCAA
+tig00000167     1440474 1440502 -       16.7041 1.63e-07        0.148   CATTTGCTTTGGCCTAGCGGAAGCCAATT
+
+
+
+
+
+
+
+
+First attempt
+Fmotif_id        motif_alt_id    sequence_name   start   stop    strand  score   p-value q-value matched_sequence
+contig_23       37596   37624   +       33.8776 2.75e-12        0.00017 TTTTGGTTTCTGCTGT*GCCGCAGCCACAA	
+contig_21       59148   59176   +       33.2347 5.4e-12 		0.00017 TTGCGGCGTTGGCTATGC*CTAAGCCGTAA
+contig_16       2382363 2382391 +       33.1531 5.86e-12        0.00017 TTCTGGT-TTAGGC*TCAGCCTATGCCATAA	*-
+contig_22       64784   64812   +       29.7959 1.19e-10        0.00208 TTTAGGTGAGGGCTCGGCCTAAGCCATAT
+contig_23       37596   37624   -       29.7857 1.2e-10 		0.00208 TTGTGGCTGCGGCACAGCAGAAACCAAAA
+contig_20       30274   30302   +       28.8061 2.53e-10        0.00367 TTGTTGATTCGGCTGAACCTAAACCATAT
+contig_22       7000862 7000890 +       28.2755 3.73e-10        0.00393 TTATGGCCATGGCTTAGCCAACGCCATTT
+scaffold_108    1296113 1296141 +       28.2347 3.84e-10        0.00393 TATCGGCTTCGGTCAAGCAATAACCAAAA
+contig_21       7049527 7049555 -       28.1531 4.07e-10        0.00393 TTTCGGTTACTGCCATGCCGTAGCCATAG
+scaffold_108    1296113 1296141 -       27.7755 5.29e-10        0.0046  TTTTGGTTATTGCTTGACCGAAGCCGATA
+contig_21       2124241 2124269 -       27.602  5.97e-10        0.00469 TTGTTGCTGTTGTTGAGCCAAAGCCAAAA
+contig_21       59148   59176   -       27.4796 6.48e-10        0.00469 TTACGGCTTAGGCATAGCCAACGCCGCAA
+contig_22       7000862 7000890 -       27.3265 7.19e-10        0.0048  AAATGGCGTTGGCTAAGCCATGGCCATAA
+contig_16       2394691 2394719 +       27.0102 8.87e-10        0.0055  ATTCGGCTGTGGCTTC*GCCTATTCCATAA	*
+contig_20       7776470 7776498 -       26.8469 9.86e-10        0.00571 CTTTGGTCATGGTTTGACCAAAACCAAAA
+contig_29       2290    2318    +       26.1837 1.5e-09 		0.00769 CTTAGGCTTAGGCTTAGCCTAAGCCTAAG
+contig_29       2290    2318    -       26.1837 1.5e-09 		0.00769 CTTAGGCTTAGGCTAAGCCTAAGCCTAAG
+scaffold_18     29289   29317   +       25.7551 1.96e-09        0.00945 TAATGGTTTTGGTTTGACCTAAGCCAATG
+contig_20       7776470 7776498 +       25.5306 2.24e-09        0.0103  TTTTGGTTTTGGTCAAACCATGACCAAAG
+contig_21       7049527 7049555 +       25.2653 2.62e-09        0.0114  CTATGGCTACGGCATGGCAGTAACCGAAA
+contig_21       2124241 2124269 +       24.4082 4.29e-09        0.0178  TTTTGGCTTTGGCTCAACAACAGCAACAA
+scaffold_18     29289   29317   -       23.9286 5.6e-09 		0.0214  CATTGGCTTAGGTCAAACCAAAACCATTA
+contig_16       6834244 6834272 +       23.9082 5.66e-09        0.0214  CTTTGGTT-TTAG*CAGAGCAAGATCCCAAA	*-
+contig_23       3400064 3400092 +       23.5918 6.71e-09        0.0243  TATTGGCTTCGGTTTGGCCATTGCCTTTG
+contig_10       489495  489523  -       23.4286 7.32e-09        0.0255  TTCTGGCCTGGGCATGGCCAATGCCTTAT
+contig_16       50195   50223   +       23.2449 8.07e-09        0.0268  TAATGGCTTTAGTTCGA*CCAAAGCCTTTT	*
+contig_16       3893102 3893130 +       23.1837 8.33e-09        0.0268  CTTTGGTTAAAGCATTACCAATGCCATAT	NO diminution
+contig_23       7956049 7956077 -       21.1837 2.26e-08        0.0701  TATTGGATGGGGCTTTGCCATAGCCTTTT
+contig_10       385226  385254  -       20.0102 3.9e-08 		0.11    TTTTGGTTTAGGCTGGAAAAGAGCCAAAT
+tig00000167     8175394 8175422 -       20.0102 3.9e-08 		0.11    TTTTGGTTTAGGCTGGAAAAGAGCCAAAT
+tig00000167     5713360 5713388 +       19.9898 3.94e-08        0.11    TGTTGGTTTTTGCTGAGCAGGCACCAAAA
+contig_16       2382363 2382391 -       19.7041 4.48e-08        0.122   TTATGGCATAGGCTGAGCCTAAACCAGAA
