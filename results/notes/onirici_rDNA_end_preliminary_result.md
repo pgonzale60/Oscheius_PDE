@@ -37,13 +37,12 @@ Examination of the primary sequence of Chromosome II (`nxOscOnir1.2.primary.fa.g
 
 ---
 
-### B. High-Coverage Spanning Reads Across the Core–rDNA Boundary on Farm HPC
+### B. Spanning Reads Across the Core–rDNA Boundary on Farm HPC
 By accessing the Sanger Farm HPC cluster (`farm22-head2`) via Teleport (`tsh`) and querying the remapped PacBio read alignments (`remmaped_all_reads_nxOscOnir1.5.bam`), we inspected the raw alignments across both key boundaries:
 
 1. **Continuous Physical Connection at 1,190,878 bp:**
-   * Sequencing coverage across the core-to-rDNA boundary ($1,190,878\text{ bp}$) is **$230\times$**.
-   * Numerous individual PacBio HiFi reads (e.g. `m64016_201225_182119/176949466/ccs`) cleanly span across the boundary, with several kilobases extending into the euchromatic core and into the rDNA non-coding spacer.
-   * **Complete Absence of Motif:** The entire transition sequence shows **zero match** to the 27 bp consensus elimination motif ($\text{TTWGGYTDWGGCYVAGCCNAABCCAAA}$) and contains no 5' half-motif. The boundary is an ordinary, continuous genomic transition.
+   * **Coverage Resolution:** While raw depth reaches $230\times$ due to secondary alignments from the repetitive IGS upstream, filtering out secondary and multi-mapping reads (`MAPQ >= 20`) reveals **exactly 30 uniquely mapped PacBio HiFi reads** (`MAPQ = 60`) that cleanly span across the boundary between the single-copy euchromatic core and the rDNA non-coding spacer. In the adjacent unique core ($1.200\text{ – }1.202\text{ Mb}$), mean coverage is $95.8\times$.
+   * **Putative Motif Search in Spanning Reads:** Exhaustive inspection of the $10,783\text{ bp}$ sequence of spanning read `m64016_201225_182119/176949466/ccs` identified a candidate core sequence at **position 6,188 bp** (`TAATACCTGCAGCT AGGCGAGCC TAGCTTTTGTGACAT`), which harbors the core doublet `AGGCGAGCC`. While it lacks the canonical 5' `TT[TA]GG` tract and 3' tail, we note **Position 6,188 bp as a putative sequence** for further investigation.
 2. **Read Dynamics at the Internal Telomere Junction (1,185,509 bp):**
    * Coverage across this site is **$\sim 100\times$** (strictly equimolar with standard somatic ends).
    * Reads terminate with soft-clipping where the telomeric hexamers begin.
@@ -71,17 +70,17 @@ Projection of all 109 telomere-clipped raw PacBio reads mapping across the rDNA 
 
 ---
 
-### D. Complete Absence of the 27 bp PDE Cleavage Motif
+### D. Examination of the 27 bp PDE Cleavage Motif
 * The conserved *O. onirici* PDE consensus cleavage motif is:
   $$\text{5' - } \mathbf{TTWGGYTDWGGCYVAGCCNAABCCAAA} \text{ - 3'}$$
 * In bona fide chromosomal PDE ends (such as Chromosome II Right at 10,439,112 bp):
   * The scission motif matches with extraordinary statistical significance (**$P = 3.16 \times 10^{-12}$**).
   * The enzymatic cut cleanly leaves the 5' half-motif directly preceding the *de novo* telomere addition (`...CTAATATTTTTTTGGATGAGGCCGA | (TTAGGC)n`).
-* In stark contrast, sequence examination of all three rDNA junctions:
-  * **Core transition (1,190,878 bp):** No motif.
+* At the rDNA junctions:
+  * **Core transition read region (1,190,878 bp):** Position 6,188 bp of spanning read `m64016_201225_182119/176949466/ccs` (`...TAATACCTGCAGCT AGGCGAGCC TAGCTTTTGTGACAT...`) carries the core doublet `AGGCGAGCC` and is cataloged as a **putative motif**, though it lacks the full 27 bp consensus features.
   * **28S Junction (pos ~4,705 bp):** `...TTGCTTTCGGGCTTAGTATCT | (TTAGGC)n` — No motif (MEME $P = 0.826$).
   * **18S Junction (pos ~1,637 bp):** `(GCCTAA)n | TTTCGAGAAGACTGAG...` — No motif.
-* **Conclusion:** The entire developmental processing of the rDNA locus operates via a **motif-independent enzymatic mechanism**, completely decoupled from the sequence-specific endonucleolytic machinery responsible for somatic genome reduction across the rest of the genome.
+* **Conclusion:** Somatic telomerization at the 18S and 28S internal cleavage sites proceeds independently of the full 27 bp PDE motif, while the boundary region near the core anchor contains candidate core doublet motifs (such as pos 6,188 bp) that warrant attention as putative scission/recognition sequences.
 
 ---
 
