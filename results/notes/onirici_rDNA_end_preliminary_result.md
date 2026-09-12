@@ -36,12 +36,28 @@ We sought to determine:
   * Coordinates 20,639 – 23,586 bp (2,948 bp): The canonical rDNA **Intergenic Spacer (IGS)**, showing $>95\%$ identity to internal IGS units across Chr II.
   * Coordinates 23,587 – 44,096 bp: Direct transition into a massive **16.3 kb pure `(TTAGGC)n` telomeric repeat tract**.
 
-### D. Complete Absence of the 27 bp PDE Cleavage Motif
+### D. Telomere-Clipped Read Distribution Across the Canonical rDNA Unit
+To ensure that the assembled rDNA–telomere junction in `ptg000014l` was not an artifact of assembler selection, all 109 telomere-clipped raw PacBio reads mapping across the entire 1.2 Mb rDNA array were projected onto a canonical 6,958 bp rDNA unit (18S: 1..1,754 bp; ITS/5.8S: 1,755..2,200 bp; 28S: 2,201..6,902 bp; IGS/ETS: 6,903..6,958 bp):
+
+1. **Cluster 1 ($N = 55$ reads, orientation `R`):**
+   * Projects sharply to relative position **~4,705 bp** (in 28S rRNA).
+   * Matches the exact assembly junction found in telotig `ptg000014l` (relative pos 4,703 bp).
+   * Telomere tracts are massive: mean $>1,200$ repeats.
+2. **Cluster 2 ($N = 44$ reads, orientation `L`):**
+   * Projects sharply to relative position **~1,637 bp** (distal end of 18S rRNA).
+   * Represents the complementary strand perspective traversing inward from the opposite end of the collapsed rDNA repeat.
+   * Telomere tracts are massive: mean $>1,200$ repeats.
+3. **Non-cluster Singletons ($N = 10$ reads):**
+   * 10 reads are scattered across the rDNA unit (pos 637, 1624, 2314, 2559, 2724, 3956, 5601, 5784, 6375, 6586).
+   * Exactly $n = 1$ read at each distinct site.
+   * Low repeat counts (median 62 repeats, range 16–134) and MAPQ $\le 1$, characteristic of stochastic sequencing chimeras / low-level library noise rather than coordinated biological cleavage sites.
+
+### E. Complete Absence of the 27 bp PDE Cleavage Motif
 * The conserved *O. onirici* PDE consensus cleavage motif is:
   $$\text{5' - } \mathbf{TTWGGYTDWGGCYVAGCCNAABCCAAA} \text{ - 3'}$$
 * In true somatic diminution sites, enzymatic scission leaves the 5' half-motif immediately preceding the *de novo* telomere addition.
-* In `ptg000014l`, the sequence immediately upstream of pos 23,587 (`...TTGCTTTCGGGCTTAGTATCT - [TTAGGC]n`) **completely lacks the 27 bp motif and contains no 5' half-motif**.
-* This matches the MEME motif search (`nxOscOnir1.2.meme.txt`), where 10 of the 12 chromosome ends had significant motif matches ($P \sim 10^{-10}\text{ to }10^{-14}$), while Chr II Left scored **$P = 0.826$ (no motif detected)**.
+* Neither Cluster 1 (~4,705 bp) nor Cluster 2 (~1,637 bp) contains the 27 bp motif or the 5' half-motif (`has_motif = FALSE`).
+* MEME motif search across all chromosome ends (`nxOscOnir1.2.meme.txt`) gave $P = 0.826$ for Chr II Left, contrasting with $P \sim 10^{-10} \text{ to } 10^{-14}$ at bona fide PDE ends.
 
 ---
 
