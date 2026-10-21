@@ -1,0 +1,4 @@
+species	strain	assembly	chromosome	unit_size_bp	r18S_length_bp	r18S_pct	its_length_bp	its_pct	r28S_length_bp	r28S_pct	igs_length_bp	igs_pct
+Oscheius onirici	PS2068	nxOscOnir1.2	II	6959	1755	25.22	407	5.85	4741	68.13	56	0.8
+Oscheius sp. DF5120	DF5120	nxOscSper1.1	II	7031	1756	24.98	456	6.49	4194	59.65	625	8.89
+Oscheius dolichura	PS1017	nxOscDolc1.1	IV	8066	1755	21.76	438	5.43	4348	53.9	1525	18.91

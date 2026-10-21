@@ -1,0 +1,4 @@
+strain	assembly	contig	start	end	length	rotation	n18S	median_spacing
+PS2068	nxOscOnir1.2	II	21543	28501	6959	0	168	6959
+DF5120	nxOscSper1.1	II	8146863	8153893	7031	0	6	7031
+PS1017	nxOscDolc1.1	IV	12453593	12461658	8066	5873	1	NA
