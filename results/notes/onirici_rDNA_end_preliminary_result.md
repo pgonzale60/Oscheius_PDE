@@ -1,146 +1,66 @@
-# Preliminary Result: Genomic Architecture, Assembly Inversion, and Motif-Independent Telomerization of the rDNA Locus in *Oscheius onirici*
+# Preliminary Findings & Assembly Dissection: The Chromosome II rDNA Locus in *Oscheius onirici*
 
-**Date:** September 12, 2026  
-**Species:** *Oscheius onirici* (strain PS2068, assembly `nxOscOnir1.2` / `nxOscOnir1.5`)  
+**Date:** September 13, 2026  
+**Species:** *Oscheius onirici* (strain PS2068, assemblies `nxOscOnir1.2` / `nxOscOnir1.5`)  
 **Genomic Locus:** Chromosome II Left Terminus (rDNA Array)
 
----
-
-## 1. Research Question & Biological Context
-In *Oscheius* species undergoing Programmed DNA Elimination (PDE), somatic chromosomes undergo developmental scission and *de novo* telomere addition at distal ends guided by a conserved 27 bp cleavage motif. Chromosome II Left harbors a massive tandem array of 18S/28S ribosomal RNA genes ($\ge 1.2\text{ Mb}$, 344+ assembled units).
-
-We sought to determine:
-1. **Is diminution absent at the rDNA-bearing end, or does diminution occur within the rDNA array?**
-2. **What is the true physical relationship between the rDNA array, the euchromatic core, and the terminal telomere?**
-3. **Where does the germline break occur, and do the spanning reads reveal the canonical PDE cleavage motif?**
+> [!WARNING]
+> **SUPERSEDED SPECULATIVE MODEL:**
+> Earlier working notes hypothesized an "extrachromosomal macrochromosome with two-sided resection and somatic fusion." That speculative model was **definitively refuted** upon verifying that the core boundary (`II:1,190,878 bp`) has **zero telomere-clipped reads**, proving the core is never amputated.
+> 
+> **Current Validated Model:** See [`rdna_resolution_and_hypotheses.md`](file:///Users/pgonzale60/Documents/research/oscheius_2026/pde_workbench/notes/rdna_resolution_and_hypotheses.md). The rDNA array forms the native, intact physical chromosome terminus in both germline and soma. It is **completely exempt from PDE**, directly refuting Launay et al. (2026).
 
 ---
 
-## 2. Empirical Findings
+## 1. Empirical Findings
 
-### A. Chromosome II Architecture & Assembly Misassembly
-Examination of the primary sequence of Chromosome II (`nxOscOnir1.2.primary.fa.gz`) across the 0 to 1.25 Mb region uncovered a striking structural misassembly:
+### A. Chromosome II Left: Assembly Artifact Dissection
+Inspection of the PacBio HiFi primary assembly (`nxOscOnir1.2.primary.fa.gz`) uncovered an algorithmic contig-stitching artifact:
+1. **Leftmost Edge (1 bp):** Terminates abruptly mid-unit ($18S$ begins at pos 666 bp) with **0 telomeric hexamer repeats** (`TTAGGC`/`GCCTAA`) in the terminal 2,000 bp.
+2. **Internal Telomere Junction (1,185,509 bp):** Contains the exact somatic rDNA–telomere junction captured in telotig `ptg000014l` (100% identity over 87 bp).
+3. **Artificial Inversion (1,185,510 – 1,190,877 bp):** The assembler stitched a **4,703 bp inverted rDNA segment** (reverse complement of 18S to 28S pos 4,703) directly downstream of the junction.
+4. **Core Boundary (1,190,878 bp):** The true euchromatic chromosome core (containing canonical protein-coding genes like `gene-8173`) begins cleanly at **1,190,878 bp**.
+5. **Read Verification:** Raw BAM queries on Sanger Farm HPC (`remmaped_all_reads_nxOscOnir1.5.bam`) show **0 reads spanning the 4.7 kb inverted palindrome**, confirming it is an algorithmic stitching artifact resulting from intra-array structural inversions.
 
-1. **Leftmost Edge (Coordinate 1 bp):**
-   * Terminates abruptly in the middle of an rDNA repeat unit ($18S$ begins at pos 666 bp).
-   * Possesses **0 telomeric hexamer repeats** (`TTAGGC`/`GCCTAA`) in the terminal 2,000 bp.
-2. **The Internal Telomere Junction (Coordinate 1,185,509 bp):**
-   * The tandem array runs from 1 bp to 1,185,509 bp.
-   * At **pos 1,185,509 bp**, the sequence contains the **exact rDNA–telomere junction** captured in telotig `ptg000014l` ($100\%$ identity across 87 bp).
-   * Telomere-clipped reads map directly to this coordinate.
-3. **The Inversion & Stitch into Euchromatin (1,185,510 – 1,190,877 bp):**
-   * Instead of continuing into a telomere, the assembler stitched a **4,703 bp inverted rDNA segment** (the reverse complement of 18S to 28S pos 4,703) directly downstream of the junction.
-   * Coordinates 1,190,212 – 1,190,877 bp represent the reverse complement of the 666 bp non-coding spacer seen at pos 1 – 666 bp.
-   * The true **euchromatic chromosome core** (containing canonical protein-coding genes like `gene-8173`) begins cleanly at **coordinate 1,190,878 bp**.
-4. **Assembly Pathology Conclusion:**
-   The assembler folded the terminal rDNA cassette back into the chromosome, creating an artificial head-to-head hairpin at 1.185 Mb that connects to the euchromatic core, while leaving coordinate 1 bp dangling without a telomere.
+### B. Spanning Reads Across the Core–rDNA Boundary
+* Querying `II:1190850-1190900` revealed that while raw depth reaches $230\times$ due to repetitive IGS multi-mapping, filtering for unique mapping (`MAPQ >= 20`) reveals **exactly 30 high-confidence, uniquely mapped PacBio HiFi reads (`MAPQ = 60`)** that cleanly span the junction between euchromatin and the non-coding rDNA spacer.
+* In the adjacent unique core ($1.200\text{ – }1.202\text{ Mb}$), coverage is $95.8\times$. 
+* Crucially, there are **0 reads with clipped telomeres at the 1,190,878 bp core boundary**. The core is physically attached and intact.
 
----
-
-### B. Spanning Reads Across the Core–rDNA Boundary on Farm HPC
-By accessing the Sanger Farm HPC cluster (`farm22-head2`) via Teleport (`tsh`) and querying the remapped PacBio read alignments (`remmaped_all_reads_nxOscOnir1.5.bam`), we inspected the raw alignments across both key boundaries:
-
-1. **Continuous Physical Connection at 1,190,878 bp:**
-   * **Coverage Resolution:** While raw depth reaches $230\times$ due to secondary alignments from the repetitive IGS upstream, filtering out secondary and multi-mapping reads (`MAPQ >= 20`) reveals **exactly 30 uniquely mapped PacBio HiFi reads** (`MAPQ = 60`) that cleanly span across the boundary between the single-copy euchromatic core and the rDNA non-coding spacer. In the adjacent unique core ($1.200\text{ – }1.202\text{ Mb}$), mean coverage is $95.8\times$.
-   * **Putative Motif Search in Spanning Reads:** Exhaustive inspection of the $10,783\text{ bp}$ sequence of spanning read `m64016_201225_182119/176949466/ccs` identified a candidate core sequence at **position 6,188 bp** (`TAATACCTGCAGCT AGGCGAGCC TAGCTTTTGTGACAT`), which harbors the core doublet `AGGCGAGCC`. While it lacks the canonical 5' `TT[TA]GG` tract and 3' tail, we note **Position 6,188 bp as a putative sequence** for further investigation.
-2. **Read Dynamics at the Internal Telomere Junction (1,185,509 bp):**
-   * Coverage across this site is **$\sim 100\times$** (strictly equimolar with standard somatic ends).
-   * Reads terminate with soft-clipping where the telomeric hexamers begin.
-   * Crucially, there are **no reads spanning across the inverted hairpin palindrome** created by the assembler, proving that the $4.7\text{ kb}$ inverted segment was an algorithmic contig-stitching artifact rather than a true biological palindrome.
+### C. Telomere-Clipped Read Distribution & Stoichiometry
+Projection of telomere-clipped PacBio reads onto the canonical 6,958 bp rDNA unit (18S: 1..1,754 bp; ITS/5.8S: 1,755..2,200 bp; 28S: 2,201..6,902 bp; IGS: 6,903..6,958 bp) revealed two sharp clusters:
+1. **Cluster 1 ($N = 55$ reads, Orientation `R`):** Maps sharply to **position ~4,705 bp** (inside **28S rRNA**), transitioning into `(TTAGGC)n`.
+2. **Cluster 2 ($N = 44$ reads, Orientation `L`):** Maps sharply to **position ~1,637 bp** (distal end of **18S rRNA**), transitioning into `(GCCTAA)n`.
+3. **Molarity / Stoichiometry:**
+   - Total reads across Cluster 1 and Cluster 2 = $55 + 44 = 99\text{ reads}$.
+   - This matches the diploid genome coverage ($\sim 95\text{--}100\times$).
+   - Unlike true PDE ends, there is **zero germline read extension (~10x)** extending past these telomeres, and zero CBS cleavage motifs at the junctions.
+   - The two opposite orientations reflect native structural inversions (head-to-head repeats) or a stable inversion polymorphism in the sequenced population.
 
 ---
 
-### C. Telomere-Clipped Read Distribution: Molarity Rules Out Small Minichromosomes
-Projection of all 109 telomere-clipped raw PacBio reads mapping across the rDNA locus onto a canonical 6,958 bp rDNA repeat unit (18S: 1..1,754 bp; ITS/5.8S: 1,755..2,200 bp; 28S: 2,201..6,902 bp; IGS: 6,903..6,958 bp) revealed **two distinct, prominent clusters**:
+## 2. Methodological & Cluster Reproducibility
 
-1. **Cluster 1 ($N = 55$ reads, Orientation `R`):**
-   * Maps sharply to **position ~4,705 bp** (inside the **28S rRNA gene**).
-   * Represents a forward-strand junction where rDNA transitions rightward into telomere repeats: `[...rDNA...28S(4705)] ── (TTAGGC)n`.
-   * Matches the exact assembly junction found in telotig `ptg000014l` (pos 4,703 bp).
-2. **Cluster 2 ($N = 44$ reads, Orientation `L`):**
-   * Maps sharply to **position ~1,637 bp** (distal end of the **18S rRNA gene**).
-   * Represents a reverse-strand junction where telomere repeats transition into rDNA: `(GCCTAA)n ── [18S(1637)...28S...]`.
-3. **Non-cluster Singletons ($N = 10$ reads):**
-   * Isolated singletons ($n = 1$ read per site) scattered across the repeat unit with low repeat counts and MAPQ $\le 1$ (sequencing noise).
-4. **Molarity / Stoichiometry Proof:**
-   * In *O. onirici*, standard somatic chromosome ends have **~50–100 telomere-clipped reads**.
-   * Cluster 1 ($N=55$) and Cluster 2 ($N=44$) each exhibit **exactly 1× equimolar coverage**.
-   * If the sequence-specific mechanism cleaved every rDNA unit (or excised a 3 kb fragment from each), we would observe a $>300\times$ coverage multiplier ($>15,000$ reads).
-   * The 1× equimolar coverage proves that the cuts do not shatter the array into small fragments, but instead **define the macro-boundaries of a single massive ~1.2 Mb molecule per genome equivalent**.
-
----
-
-### D. Examination of the 27 bp PDE Cleavage Motif
-* The conserved *O. onirici* PDE consensus cleavage motif is:
-  $$\text{5' - } \mathbf{TTWGGYTDWGGCYVAGCCNAABCCAAA} \text{ - 3'}$$
-* In bona fide chromosomal PDE ends (such as Chromosome II Right at 10,439,112 bp):
-  * The scission motif matches with extraordinary statistical significance (**$P = 3.16 \times 10^{-12}$**).
-  * The enzymatic cut cleanly leaves the 5' half-motif directly preceding the *de novo* telomere addition (`...CTAATATTTTTTTGGATGAGGCCGA | (TTAGGC)n`).
-* At the rDNA junctions:
-  * **Core transition read region (1,190,878 bp):** Position 6,188 bp of spanning read `m64016_201225_182119/176949466/ccs` (`...TAATACCTGCAGCT AGGCGAGCC TAGCTTTTGTGACAT...`) carries the core doublet `AGGCGAGCC` and is cataloged as a **putative motif**, though it lacks the full 27 bp consensus features.
-  * **28S Junction (pos ~4,705 bp):** `...TTGCTTTCGGGCTTAGTATCT | (TTAGGC)n` — No motif (MEME $P = 0.826$).
-  * **18S Junction (pos ~1,637 bp):** `(GCCTAA)n | TTTCGAGAAGACTGAG...` — No motif.
-* **Conclusion:** Somatic telomerization at the 18S and 28S internal cleavage sites proceeds independently of the full 27 bp PDE motif, while the boundary region near the core anchor contains candidate core doublet motifs (such as pos 6,188 bp) that warrant attention as putative scission/recognition sequences.
-
----
-
-## 3. Unified Biological Model: Germline Architecture & Somatic Two-Fates
-
-Synthesizing the sequence evidence, coverage molarity, and long-read alignments:
-
-```
-A. GERMLINE CHROMOSOME ARCHITECTURE:
-[Telomere(?)] ═════ [Tandem rDNA Array ~1.2 Mb] ═════ [Euchromatic Core] (starts at 1.191 Mb)
-                    (Units: 18S -> 5.8S -> 28S -> IGS)  Continuous 230x PacBio read support
-
-B. SOMATIC DEVELOPMENTAL PROCESSING (MOTIF-INDEPENDENT):
-1. Chromosomal Stump Healing (Model B Aspect):
-   The distal portion of the chromosomal array undergoes double-strand scission at position 4,705 bp of 28S.
-   The proximal fragment anchored to the core is healed and capped with a telomere:
-   [Euchromatic Core] ──── [Proximal rDNA units] ──── 28S(4705) ── (TTAGGC)n  (Cluster 1, N=55)
-
-2. Extrachromosomal Linear Minichromosome (Model A Aspect):
-   The remaining massive ~1.2 Mb rDNA array is liberated as a single contiguous molecule and capped on both ends:
-   (GCCTAA)n ── 18S(1637) ════ [Tandem Units ~1.2 Mb] ════ 28S(4705) ── (TTAGGC)n
-   (Cluster 2, N=44)                                      (Cluster 1, N=55)
-```
-
-Because whole-worm sequencing captures DNA from both the healed chromosomal stump and the equimolar extrachromosomal minichromosome, we observe robust, stoichiometric read support for both the 18S and 28S inward-facing telomeres.
-
----
-
-## 4. Methods, Scripts & Cluster Reproducibility
-
-### Cluster Environment & BAM Access (Sanger Farm HPC)
+### Sanger Farm HPC Environment
 * **Host:** `farm22-head2` via Teleport (`tsh ssh pg17@farm22-head2`)
 * **Environment Modules:**
   ```bash
-  module use /software/spack_environments/groups/toladmin/00/share/spack/modules/linux-ubuntu22.04-x86_64_v3 \
-             /software/spack_environments/default/00/share/spack/modules/linux-ubuntu22.04-x86_64_v3
+  export MODULEPATH="/software/spack_environments/groups/toladmin/02/share/spack/modules/linux-ubuntu22.04-x86_64_v3:\
+  /software/spack_environments/groups/toladmin/01/share/spack/modules/linux-ubuntu22.04-x86_64_v3:\
+  /software/spack_environments/groups/toladmin/00/share/spack/modules/linux-ubuntu22.04-x86_64_v3:\
+  /software/spack_environments/default/00/share/spack/modules/linux-ubuntu22.04-x86_64_v3:\
+  /software/modules"
   module load samtools/1.20--h50ea8bc_0
   ```
-* **BAM File:**
+* **Primary BAM File:**
   `/lustre/scratch122/tol/teams/blaxter/users/pg17/freeze/2022-02-17/data/Oscheius/Oscheius_onirici/analysis/diminution/telomeres/remmaped_all_reads_nxOscOnir1.5.bam`
 
-### Inspection Commands Used:
+### Key Extraction Commands
 ```bash
-# 1. Depth and reads spanning core-rDNA boundary (1,190,878 bp):
-samtools depth -r II:1190850-1190900 remmaped_all_reads_nxOscOnir1.5.bam
-samtools view remmaped_all_reads_nxOscOnir1.5.bam II:1190875-1190880 | awk '$4 <= 1190878 && $4 + 500 >= 1190878'
+# Extract clean spanning reads across the 1,190,878 bp core-rDNA boundary
+samtools view -h -q 20 remmaped_all_reads_nxOscOnir1.5.bam II:1190875-1190880 | \
+  awk 'BEGIN{OFS="\t"} /^@/ {print; next} $4 <= 1190878 && ($4 + length($10)) >= 1190878 {print}' > spanning_reads_core_rDNA.sam
 
-# 2. Depth across internal telomere junction (1,185,509 bp):
-samtools depth -r II:1185490-1185530 remmaped_all_reads_nxOscOnir1.5.bam
-
-# 3. Soft-clipping check at internal telomere junction:
+# Inspect soft-clipping and telomeric hexamers at 1,185,509 bp
 samtools view remmaped_all_reads_nxOscOnir1.5.bam II:1185500-1185520 | grep "S"
 ```
-
-### Local Analysis Scripts:
-* Read projection and motif checks:
-  ```bash
-  Rscript analysis/investigate_onirici_rDNA_terminus.R
-  ```
-* Multi-panel Figure S6 generation:
-  ```bash
-  Rscript analysis/plot_figureS6_onirici_rDNA_terminus.R
-  ```
